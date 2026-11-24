@@ -17,8 +17,8 @@ const MODELS = {
   sonnet: process.env.MODEL_SMART || "claude-sonnet-5-5",
   opus: process.env.MODEL_SMART || "claude-sonnet-5-5", // on-stage agents never need opus
 };
-const MAX_TOKENS = { judge: 900, "then-vs-now-analyst": 900 };
-const DEFAULT_MAX_TOKENS = 700;
+const MAX_TOKENS = { judge: 2500, "then-vs-now-analyst": 2500 };
+const DEFAULT_MAX_TOKENS = 2000;
 const TIMEOUT_MS = Number(process.env.AGENT_TIMEOUT_MS) || 9000;
 const ALWAYS_FAST = (process.env.JUDGE_MODEL || "").toLowerCase() === "fast";
 const LABEL = "For entertainment only, not a diagnosis.";
@@ -95,7 +95,18 @@ export default async (req, context) => {
     }
     const data = await r.json();
     const text = (data.content || []).filter((c) => c.type === "text").map((c) => c.text).join("");
-    const parsed = extractJson(text);
+    let parsed;
+    try {
+      parsed = extractJson(text);
+    } catch {
+      // Diagnostics only: no user input, no prompt, no model text.
+      console.error("no usable JSON", JSON.stringify({
+        agent, model: modelId, stop_reason: data.stop_reason,
+        blocks: (data.content || []).map((c) => c.type), text_length: text.length,
+        output_tokens: data.usage?.output_tokens,
+      }));
+      return json({ error: "bad_reply", message: "The expert's notes came back garbled. Try again." }, 502);
+    }
     return json({ ...parsed, agent, character, model: modelId, label: LABEL });
   } catch (e) {
     if (e?.name === "AbortError") {
