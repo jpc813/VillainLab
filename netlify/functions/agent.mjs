@@ -5,7 +5,7 @@
 //   MODEL_FAST / MODEL_SMART (optional model ID overrides)
 //   JUDGE_MODEL        (optional, the one-line switch: set to "fast" to always run
 //                       the judge and then-vs-now on the fast model)
-//   AGENT_TIMEOUT_MS   (optional, default 9000: stop a slow call early so the
+//   AGENT_TIMEOUT_MS   (optional, default 26000: stop a slow call early so the
 //                       browser can retry on the fast model before Netlify's
 //                       own function time limit cuts it off)
 // Privacy: request bodies are never logged. The quiz never calls this function.
@@ -19,7 +19,7 @@ const MODELS = {
 };
 const MAX_TOKENS = { judge: 2500, "then-vs-now-analyst": 2500 };
 const DEFAULT_MAX_TOKENS = 2000;
-const TIMEOUT_MS = Number(process.env.AGENT_TIMEOUT_MS) || 9000;
+const TIMEOUT_MS = Number(process.env.AGENT_TIMEOUT_MS) || 26000;
 const ALWAYS_FAST = (process.env.JUDGE_MODEL || "").toLowerCase() === "fast";
 const LABEL = "For entertainment only, not a diagnosis.";
 
@@ -77,18 +77,26 @@ export default async (req, context) => {
 
   const ctrl = new AbortController();
   const timer = setTimeout(() => ctrl.abort(), TIMEOUT_MS);
+  const callClaude = (withThinkingOff) => fetch("https://api.anthropic.com/v1/messages", {
+    method: "POST",
+    signal: ctrl.signal,
+    headers: { "x-api-key": key, "anthropic-version": "2023-06-01", "content-type": "application/json" },
+    body: JSON.stringify({
+      model: modelId,
+      max_tokens: MAX_TOKENS[agent] || DEFAULT_MAX_TOKENS,
+      system,
+      messages: [{ role: "user", content: userMsg }],
+      // Skip extended thinking: these are short, structured answers and speed matters.
+      ...(withThinkingOff ? { thinking: { type: "disabled" } } : {}),
+    }),
+  });
   try {
-    const r = await fetch("https://api.anthropic.com/v1/messages", {
-      method: "POST",
-      signal: ctrl.signal,
-      headers: { "x-api-key": key, "anthropic-version": "2023-06-01", "content-type": "application/json" },
-      body: JSON.stringify({
-        model: modelId,
-        max_tokens: MAX_TOKENS[agent] || DEFAULT_MAX_TOKENS,
-        system,
-        messages: [{ role: "user", content: userMsg }],
-      }),
-    });
+    let r = await callClaude(true);
+    if (r.status === 400) {
+      // If this model doesn't accept the thinking setting, retry once without it.
+      console.error("retrying without thinking setting");
+      r = await callClaude(false);
+    }
     if (!r.ok) {
       console.error("Claude API error", r.status); // status only; never the body or prompt
       return json({ error: "upstream_error", message: "The panel couldn't reach its experts. Try a starter villain." }, 502);
