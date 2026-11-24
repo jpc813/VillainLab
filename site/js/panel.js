@@ -38,17 +38,33 @@ async function init() {
   }
 }
 
-async function callAgent(agent, character, context = {}) {
+async function callAgent(agent, character, context = {}, fast = false) {
   const r = await fetch("/api/agent", {
     method: "POST",
     headers: { "content-type": "application/json" },
-    body: JSON.stringify({ agent, character, context, password: password || undefined }),
+    body: JSON.stringify({ agent, character, context, password: password || undefined, fast: fast || undefined }),
   });
   let data = {};
   try { data = await r.json(); } catch { /* fallthrough */ }
   if (r.status === 401) { pwRow.classList.add("show"); pwInput.focus(); throw new Error(data.message || "Enter the class password to run a live panel."); }
-  if (!r.ok) throw new Error(data.message || "The live panel isn't available. Pick a starter villain instead.");
+  if (!r.ok) {
+    const err = new Error(data.message || "The live panel isn't available. Pick a starter villain instead.");
+    // 504 from our function, or a gateway timeout/error page from Netlify itself.
+    err.retryFast = !fast && (r.status === 504 || r.status === 502 || data.canRetryFast === true);
+    throw err;
+  }
   return data;
+}
+
+// Slower agents (judge, then-vs-now) retry once on the fast model if they time out.
+async function callWithFallback(agent, character, context, slowMsg) {
+  try {
+    return await callAgent(agent, character, context);
+  } catch (e) {
+    if (!e.retryFast) throw e;
+    setStatus(slowMsg);
+    return await callAgent(agent, character, context, true);
+  }
 }
 
 async function run(name) {
@@ -74,7 +90,7 @@ async function run(name) {
     const [p, d] = await Promise.all([callAgent("prosecution-rater", name), callAgent("defense-rater", name)]);
     if (p.refused || d.refused) { setStatus(p.message || d.message || "That one can't go on trial here. Pick a fictional character.", true); return; }
     setStatus("Judge Okafor is weighing both sides…");
-    const j = await callAgent("judge", name, { prosecution: p.result, defense: d.result });
+    const j = await callWithFallback("judge", name, { prosecution: p.result, defense: d.result }, "The judge is taking a while, so a faster clerk is writing up the ruling…");
     if (j.refused) { setStatus(j.message || "The judge declined this case. Pick a fictional character.", true); return; }
     current = { character: name, version: p.version || j.version || "", prosecution: p, defense: d, judge: j, pregenerated: false, spoilers: true };
     setStatus("");
@@ -201,7 +217,7 @@ async function showTvn() {
   try {
     if (!current.then_vs_now) {
       out.innerHTML = `<p>Hope Rivera is comparing the beginning and the end…</p>`;
-      current.then_vs_now = await callAgent("then-vs-now-analyst", current.character, { judge: current.judge.result });
+      current.then_vs_now = await callWithFallback("then-vs-now-analyst", current.character, { judge: current.judge.result }, "Switching Hope to fast mode…");
     }
     const T = current.then_vs_now.result;
     out.innerHTML = `<div class="memo"><h3>Hope Rivera, then vs. now</h3>

@@ -3,6 +3,11 @@
 //   ANTHROPIC_API_KEY  (required for live panels)
 //   APP_PASSWORD       (optional: require a password so strangers can't spend credit)
 //   MODEL_FAST / MODEL_SMART (optional model ID overrides)
+//   JUDGE_MODEL        (optional, the one-line switch: set to "fast" to always run
+//                       the judge and then-vs-now on the fast model)
+//   AGENT_TIMEOUT_MS   (optional, default 9000: stop a slow call early so the
+//                       browser can retry on the fast model before Netlify's
+//                       own function time limit cuts it off)
 // Privacy: request bodies are never logged. The quiz never calls this function.
 import { PROMPTS } from "../lib/prompts.mjs";
 import { looksReal } from "../lib/guard.mjs";
@@ -14,6 +19,8 @@ const MODELS = {
 };
 const MAX_TOKENS = { judge: 900, "then-vs-now-analyst": 900 };
 const DEFAULT_MAX_TOKENS = 700;
+const TIMEOUT_MS = Number(process.env.AGENT_TIMEOUT_MS) || 9000;
+const ALWAYS_FAST = (process.env.JUDGE_MODEL || "").toLowerCase() === "fast";
 const LABEL = "For entertainment only, not a diagnosis.";
 
 // Best-effort rate limit (functions are stateless; this resets on cold start).
@@ -63,14 +70,20 @@ export default async (req, context) => {
   rec.push(now); hits.set(ip, rec);
 
   const { model, system } = PROMPTS[agent];
+  // body.fast is a downgrade-only flag the browser sends when retrying after a timeout.
+  const useFast = body.fast === true || ALWAYS_FAST;
+  const modelId = useFast ? MODELS.haiku : (MODELS[model] || MODELS.haiku);
   const userMsg = `Character: ${character}\nPanel context (JSON): ${ctxText}`;
 
+  const ctrl = new AbortController();
+  const timer = setTimeout(() => ctrl.abort(), TIMEOUT_MS);
   try {
     const r = await fetch("https://api.anthropic.com/v1/messages", {
       method: "POST",
+      signal: ctrl.signal,
       headers: { "x-api-key": key, "anthropic-version": "2023-06-01", "content-type": "application/json" },
       body: JSON.stringify({
-        model: MODELS[model] || MODELS.haiku,
+        model: modelId,
         max_tokens: MAX_TOKENS[agent] || DEFAULT_MAX_TOKENS,
         system,
         messages: [{ role: "user", content: userMsg }],
@@ -83,10 +96,15 @@ export default async (req, context) => {
     const data = await r.json();
     const text = (data.content || []).filter((c) => c.type === "text").map((c) => c.text).join("");
     const parsed = extractJson(text);
-    return json({ ...parsed, agent, character, label: LABEL });
+    return json({ ...parsed, agent, character, model: modelId, label: LABEL });
   } catch (e) {
+    if (e?.name === "AbortError") {
+      return json({ error: "timeout", message: "That expert took too long.", canRetryFast: !useFast }, 504);
+    }
     console.error("agent failure", e?.name || "error");
     return json({ error: "agent_failed", message: "The expert fumbled their notes. Try again." }, 502);
+  } finally {
+    clearTimeout(timer);
   }
 };
 

@@ -25,6 +25,8 @@ A panel of AI agents puts famous **fictional** villains on trial. A prosecution-
    - `ANTHROPIC_API_KEY`: your key from platform.claude.com (mark it secret, Functions scope)
    - `APP_PASSWORD`: a class password, so strangers can't spend your credit
    - Optional `MODEL_FAST` / `MODEL_SMART` to override the default model IDs.
+   - Optional `JUDGE_MODEL` = `fast`: always run the Judge (and Then vs. Now) on the fast model. Without it, the Judge tries the smarter model and automatically retries on the fast one if it runs long.
+   - Optional `AGENT_TIMEOUT_MS` (default `9000`): how long a call may run before it's stopped and retried on the fast model. Raise it (e.g. `25000`) only if your Netlify function limit is longer than 10 seconds.
 4. Click **Deploy**. Without a key, the 18 starter villains and the quiz still work.
 
 Set a monthly spend limit for your API key in the Claude Console.

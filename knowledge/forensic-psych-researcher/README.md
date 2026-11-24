@@ -20,3 +20,8 @@ Dr. Ada Kessler reads this folder before answering. Add documents here (markdown
 - docs/README.md (index)
 - docs/05-ethics-and-copyright.md
 - docs/privacy-rules.md
+
+## Source documents in this folder
+- [murrie-2009-field-disagreement.md](murrie-2009-field-disagreement.md): our own notes; the original is linked inside, not copied.
+- [murrie-2013-adversarial-allegiance.md](murrie-2013-adversarial-allegiance.md): our own notes; the original is linked inside, not copied.
+- [tal-436-episode-notes.md](tal-436-episode-notes.md): our own notes; the original is linked inside, not copied.

@@ -15,3 +15,6 @@ Chase Sterling reads this folder before answering. Add documents here (markdown,
 - docs/README.md (index)
 - docs/05-ethics-and-copyright.md
 - docs/privacy-rules.md
+
+## Source documents in this folder
+- [tal-436-episode-notes.md](tal-436-episode-notes.md): our own notes; the original is linked inside, not copied.
