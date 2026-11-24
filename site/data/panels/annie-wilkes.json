@@ -1,0 +1,129 @@
+{
+ "character": "Annie Wilkes",
+ "version": "Misery (1990 film)",
+ "pregenerated": true,
+ "spoilers": false,
+ "prosecution": {
+  "agent": "prosecution-rater",
+  "character": "Annie Wilkes",
+  "version": "Misery (1990 film)",
+  "refused": false,
+  "result": {
+   "scores": {
+    "Charm Offensive": 6,
+    "Main Character Energy": 8,
+    "Con Artistry": 6,
+    "Remorse Meter": 9,
+    "Cold Heart": 9,
+    "Thrill Hunger": 4,
+    "Short Fuse": 10,
+    "Track Record": 9
+   },
+   "evidence": {
+    "Short Fuse": "Explodes into violence over small frustrations.",
+    "Cold Heart": "Injures her captive to stop him leaving.",
+    "Track Record": "Has a hidden history of harming others."
+   },
+   "villain_index": 76,
+   "closing_argument": "Your 'number one fan' will break your ankles to prove it."
+  },
+  "label": "For entertainment only, not a diagnosis."
+ },
+ "defense": {
+  "agent": "defense-rater",
+  "character": "Annie Wilkes",
+  "version": "Misery (1990 film)",
+  "refused": false,
+  "result": {
+   "scores": {
+    "Charm Offensive": 5,
+    "Main Character Energy": 6,
+    "Con Artistry": 4,
+    "Remorse Meter": 6,
+    "Cold Heart": 5,
+    "Thrill Hunger": 2,
+    "Short Fuse": 9,
+    "Track Record": 7
+   },
+   "evidence": {
+    "Remorse Meter": "Swings into deep despair and self-loathing.",
+    "Charm Offensive": "Her warmth at first seems sincere.",
+    "Thrill Hunger": "She wants a story to end her way, not excitement."
+   },
+   "villain_index": 55,
+   "closing_argument": "A deeply unwell, isolated woman, not a cold calculator."
+  },
+  "label": "For entertainment only, not a diagnosis."
+ },
+ "judge": {
+  "agent": "judge",
+  "character": "Annie Wilkes",
+  "version": "Misery (1990 film)",
+  "refused": false,
+  "result": {
+   "gaps": [
+    {
+     "theme": "Cold Heart",
+     "prosecution": 9,
+     "defense": 5,
+     "why": "Defense sees despair and attachment; Prosecution sees cruelty. The Judge notes she feels a lot, mostly about herself."
+    },
+    {
+     "theme": "Con Artistry",
+     "prosecution": 6,
+     "defense": 4,
+     "why": "Prosecution counts her deceptions; Defense says she's too volatile to scheme."
+    },
+    {
+     "theme": "Remorse Meter",
+     "prosecution": 9,
+     "defense": 6,
+     "why": "Her low moods look like guilt to Defense; the Judge sees self-pity."
+    }
+   ],
+   "judge_scores": {
+    "Charm Offensive": 5,
+    "Main Character Energy": 7,
+    "Con Artistry": 5,
+    "Remorse Meter": 7,
+    "Cold Heart": 7,
+    "Thrill Hunger": 3,
+    "Short Fuse": 10,
+    "Track Record": 8
+   },
+   "villain_index": 65,
+   "dark_triad": {
+    "machiavellianism": "moderate",
+    "narcissism": "moderate",
+    "psychopathy": "moderate"
+   },
+   "verdict": "Volatile rather than cold. Her overwhelming emotions push her away from the classic psychopath profile, even as she does terrible things.",
+   "takeaway": "Same character, same evidence, a 21-point disagreement."
+  },
+  "label": "For entertainment only, not a diagnosis."
+ },
+ "spin": {
+  "agent": "spin-doctor",
+  "character": "Annie Wilkes",
+  "refused": false,
+  "result": {
+   "reframes": [
+    {
+     "theme": "Main Character Energy",
+     "spin": "Passionate brand loyalist and engaged customer."
+    },
+    {
+     "theme": "Short Fuse",
+     "spin": "Sets very clear expectations and enforces them immediately."
+    },
+    {
+     "theme": "Charm Offensive",
+     "spin": "Exceptional hospitality in remote locations."
+    }
+   ],
+   "title": "Head of Customer Retention",
+   "wink": "(Spin Doctor's opinions are satire. The Judge is not impressed.)"
+  },
+  "label": "For entertainment only, not a diagnosis."
+ }
+}

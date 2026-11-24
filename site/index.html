@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Villain Lab: put a fictional villain on trial</title>
+<meta name="description" content="A panel of AI agents argues whether famous fictional villains fit the psychopath profile. Inspired by This American Life #436. For entertainment only.">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="site-head">
+  <div class="wrap">
+    <a class="brand" href="index.html">The Villain Lab<small>fictional villains on trial</small></a>
+    <nav class="nav" aria-label="Main">
+      <a href="index.html" aria-current="page">Villain Panel</a>
+      <a href="quiz.html">Take the quiz</a>
+      <a href="about.html">About</a>
+      <a href="resources.html">Resources</a>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap">
+  <h1>Two experts. One villain. Rarely the same score.</h1>
+  <p class="lede">Name a fictional character. An expert hired by the prosecution and an expert hired by the defense each rate the same story evidence, and a judge explains why they disagree. It's a game version of a real finding: experts tend to lean toward whoever hired them.</p>
+
+  <form class="trial" id="trial-form" autocomplete="off">
+    <label for="character">Who's on trial?</label>
+    <div class="trial-row">
+      <input type="text" id="character" name="character" list="starter-names" maxlength="60" placeholder="Iago, Cersei Lannister, Zuko…" aria-describedby="trial-help">
+      <button class="btn" type="submit" id="trial-btn">Start the trial</button>
+    </div>
+    <datalist id="starter-names"></datalist>
+    <div class="trial-row pw-row" id="pw-row">
+      <label class="sr-only" for="password">Class password</label>
+      <input type="password" id="password" placeholder="Class password for live panels">
+    </div>
+    <p class="label-ent" id="trial-help">Fictional characters only, never real people. For entertainment only, not a diagnosis.</p>
+  </form>
+
+  <div class="docket">
+    <p>From the case archive (these open instantly):</p>
+    <ul id="starter-list"></ul>
+  </div>
+
+  <p class="status" id="status" role="status" aria-live="polite"></p>
+  <article class="case" id="case" hidden></article>
+</main>
+
+<footer class="site-foot">
+  <div class="wrap">
+    <p>For entertainment only, not a diagnosis. Fictional characters only.</p>
+    <p>Inspired by <a href="https://www.thisamericanlife.org/436/the-psychopath-test">This American Life #436, "The Psychopath Test"</a>. <a href="resources.html">Sources</a>. <a href="https://github.com/jpc813/VillainLab">Source code</a>.</p>
+  </div>
+</footer>
+<script type="module" src="js/panel.js"></script>
+</body>
+</html>

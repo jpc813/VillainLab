@@ -1,0 +1,129 @@
+{
+ "character": "Hannibal Lecter",
+ "version": "The Silence of the Lambs (1991 film)",
+ "pregenerated": true,
+ "spoilers": false,
+ "prosecution": {
+  "agent": "prosecution-rater",
+  "character": "Hannibal Lecter",
+  "version": "The Silence of the Lambs (1991 film)",
+  "refused": false,
+  "result": {
+   "scores": {
+    "Charm Offensive": 9,
+    "Main Character Energy": 9,
+    "Con Artistry": 8,
+    "Remorse Meter": 10,
+    "Cold Heart": 10,
+    "Thrill Hunger": 7,
+    "Short Fuse": 3,
+    "Track Record": 10
+   },
+   "evidence": {
+    "Charm Offensive": "Charms Clarice and the guards with wit and impeccable manners.",
+    "Remorse Meter": "Speaks of his killings with relish, never regret.",
+    "Cold Heart": "Treats people as ingredients or puzzles."
+   },
+   "villain_index": 82,
+   "closing_argument": "Every courtesy he extends is a scalpel in a velvet glove."
+  },
+  "label": "For entertainment only, not a diagnosis."
+ },
+ "defense": {
+  "agent": "defense-rater",
+  "character": "Hannibal Lecter",
+  "version": "The Silence of the Lambs (1991 film)",
+  "refused": false,
+  "result": {
+   "scores": {
+    "Charm Offensive": 8,
+    "Main Character Energy": 8,
+    "Con Artistry": 7,
+    "Remorse Meter": 8,
+    "Cold Heart": 8,
+    "Thrill Hunger": 5,
+    "Short Fuse": 2,
+    "Track Record": 9
+   },
+   "evidence": {
+    "Remorse Meter": "Shows a sincere, almost protective respect for Clarice.",
+    "Short Fuse": "Rarely loses control; violence is deliberate, not impulsive.",
+    "Cold Heart": "Helps Clarice save a life, which counts for something."
+   },
+   "villain_index": 69,
+   "closing_argument": "A monster, yes, but one with a code and a soft spot for one honest person."
+  },
+  "label": "For entertainment only, not a diagnosis."
+ },
+ "judge": {
+  "agent": "judge",
+  "character": "Hannibal Lecter",
+  "version": "The Silence of the Lambs (1991 film)",
+  "refused": false,
+  "result": {
+   "gaps": [
+    {
+     "theme": "Remorse Meter",
+     "prosecution": 10,
+     "defense": 8,
+     "why": "Prosecution reads his calm as zero remorse; Defense reads his bond with Clarice as real feeling. The film never shows him regret a single victim."
+    },
+    {
+     "theme": "Thrill Hunger",
+     "prosecution": 7,
+     "defense": 5,
+     "why": "Defense says he is patient, not thrill-seeking; Prosecution points to his delight in mind games."
+    },
+    {
+     "theme": "Charm Offensive",
+     "prosecution": 9,
+     "defense": 8,
+     "why": "Both agree he is charming; they split on whether it is a weapon or just who he is."
+    }
+   ],
+   "judge_scores": {
+    "Charm Offensive": 9,
+    "Main Character Energy": 8,
+    "Con Artistry": 8,
+    "Remorse Meter": 9,
+    "Cold Heart": 9,
+    "Thrill Hunger": 6,
+    "Short Fuse": 2,
+    "Track Record": 10
+   },
+   "villain_index": 76,
+   "dark_triad": {
+    "machiavellianism": "high",
+    "narcissism": "high",
+    "psychopathy": "high"
+   },
+   "verdict": "A rare full house: schemer, egoist and cold predator at once. His low Short Fuse makes him more frightening, not less: the control is the point.",
+   "takeaway": "Same character, same evidence, a 13-point disagreement."
+  },
+  "label": "For entertainment only, not a diagnosis."
+ },
+ "spin": {
+  "agent": "spin-doctor",
+  "character": "Hannibal Lecter",
+  "refused": false,
+  "result": {
+   "reframes": [
+    {
+     "theme": "Charm Offensive",
+     "spin": "Exceptional client-facing presence; makes every guest feel like the main course of attention."
+    },
+    {
+     "theme": "Cold Heart",
+     "spin": "Emotionally disciplined decision-maker who never lets feelings slow a project down."
+    },
+    {
+     "theme": "Main Character Energy",
+     "spin": "Strong personal brand rooted in uncompromising standards."
+    }
+   ],
+   "title": "Chief Hospitality Officer",
+   "wink": "(Spin Doctor's opinions are satire. The Judge is not impressed.)"
+  },
+  "label": "For entertainment only, not a diagnosis."
+ }
+}

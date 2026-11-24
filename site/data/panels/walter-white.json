@@ -1,0 +1,165 @@
+{
+ "character": "Walter White",
+ "version": "Breaking Bad (TV series)",
+ "pregenerated": true,
+ "spoilers": true,
+ "prosecution": {
+  "agent": "prosecution-rater",
+  "character": "Walter White",
+  "version": "Breaking Bad (TV series)",
+  "refused": false,
+  "result": {
+   "scores": {
+    "Charm Offensive": 6,
+    "Main Character Energy": 10,
+    "Con Artistry": 9,
+    "Remorse Meter": 8,
+    "Cold Heart": 8,
+    "Thrill Hunger": 7,
+    "Short Fuse": 6,
+    "Track Record": 10
+   },
+   "evidence": {
+    "Main Character Energy": "'Heisenberg' is pure pride: he does it because he's good at it.",
+    "Con Artistry": "Lies to his family and partner constantly.",
+    "Cold Heart": "Lets a person die to keep control of his partner."
+   },
+   "villain_index": 80,
+   "closing_argument": "He claims it was for family; he admits it was for himself."
+  },
+  "label": "For entertainment only, not a diagnosis."
+ },
+ "defense": {
+  "agent": "defense-rater",
+  "character": "Walter White",
+  "version": "Breaking Bad (TV series)",
+  "refused": false,
+  "result": {
+   "scores": {
+    "Charm Offensive": 5,
+    "Main Character Energy": 8,
+    "Con Artistry": 7,
+    "Remorse Meter": 5,
+    "Cold Heart": 5,
+    "Thrill Hunger": 5,
+    "Short Fuse": 5,
+    "Track Record": 8
+   },
+   "evidence": {
+    "Remorse Meter": "Shows real anguish at several points.",
+    "Cold Heart": "Starts out loving and protective.",
+    "Main Character Energy": "A humiliated, underpaid genius pushed by a cancer diagnosis."
+   },
+   "villain_index": 60,
+   "closing_argument": "A good man broken by circumstance, sliding one rationalization at a time."
+  },
+  "label": "For entertainment only, not a diagnosis."
+ },
+ "judge": {
+  "agent": "judge",
+  "character": "Walter White",
+  "version": "Breaking Bad (TV series)",
+  "refused": false,
+  "result": {
+   "gaps": [
+    {
+     "theme": "Remorse Meter",
+     "prosecution": 8,
+     "defense": 5,
+     "why": "Defense points to his anguish; Prosecution notes it rarely changes what he does next."
+    },
+    {
+     "theme": "Cold Heart",
+     "prosecution": 8,
+     "defense": 5,
+     "why": "Defense scores the early Walter; Prosecution scores the late one. Then vs. Now explains the split."
+    },
+    {
+     "theme": "Track Record",
+     "prosecution": 10,
+     "defense": 8,
+     "why": "Defense discounts early desperation; the Judge counts the whole pattern."
+    }
+   ],
+   "judge_scores": {
+    "Charm Offensive": 6,
+    "Main Character Energy": 10,
+    "Con Artistry": 9,
+    "Remorse Meter": 7,
+    "Cold Heart": 7,
+    "Thrill Hunger": 6,
+    "Short Fuse": 6,
+    "Track Record": 9
+   },
+   "villain_index": 75,
+   "dark_triad": {
+    "machiavellianism": "high",
+    "narcissism": "high",
+    "psychopathy": "moderate"
+   },
+   "verdict": "A schemer and egoist whose coldness grows over the story. He's the reverse of a redemption arc: a fall.",
+   "takeaway": "Same character, same evidence, a 20-point disagreement."
+  },
+  "label": "For entertainment only, not a diagnosis."
+ },
+ "spin": {
+  "agent": "spin-doctor",
+  "character": "Walter White",
+  "refused": false,
+  "result": {
+   "reframes": [
+    {
+     "theme": "Main Character Energy",
+     "spin": "Award-worthy product quality and a passion for being the best in his field."
+    },
+    {
+     "theme": "Con Artistry",
+     "spin": "Masterful negotiator across complex partner networks."
+    },
+    {
+     "theme": "Thrill Hunger",
+     "spin": "Entrepreneurial appetite for high-risk, high-reward ventures."
+    }
+   ],
+   "title": "Founder & Chief Chemistry Officer",
+   "wink": "(Spin Doctor's opinions are satire. The Judge is not impressed.)"
+  },
+  "label": "For entertainment only, not a diagnosis."
+ },
+ "then_vs_now": {
+  "agent": "then-vs-now-analyst",
+  "character": "Walter White",
+  "refused": false,
+  "result": {
+   "then": {
+    "scores": {
+     "Charm Offensive": 3,
+     "Main Character Energy": 3,
+     "Con Artistry": 3,
+     "Remorse Meter": 2,
+     "Cold Heart": 2,
+     "Thrill Hunger": 3,
+     "Short Fuse": 4,
+     "Track Record": 1
+    },
+    "index": 26
+   },
+   "now": {
+    "scores": {
+     "Charm Offensive": 7,
+     "Main Character Energy": 10,
+     "Con Artistry": 10,
+     "Remorse Meter": 8,
+     "Cold Heart": 8,
+     "Thrill Hunger": 7,
+     "Short Fuse": 6,
+     "Track Record": 10
+    },
+    "index": 82
+   },
+   "track_record_effect": "Track Record climbs from 1 to 10 and can never come back down.",
+   "verdict": "A fall, not a redemption: the Now score more than doubles the Then score."
+  },
+  "label": "For entertainment only, not a diagnosis."
+ }
+}

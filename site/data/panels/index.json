@@ -1,0 +1,158 @@
+{
+ "characters": [
+  {
+   "slug": "hannibal-lecter",
+   "name": "Hannibal Lecter",
+   "version": "The Silence of the Lambs (1991 film)",
+   "arc": false,
+   "gap": 13,
+   "judge_index": 76
+  },
+  {
+   "slug": "patrick-bateman",
+   "name": "Patrick Bateman",
+   "version": "American Psycho (2000 film)",
+   "arc": false,
+   "gap": 19,
+   "judge_index": 78
+  },
+  {
+   "slug": "anton-chigurh",
+   "name": "Anton Chigurh",
+   "version": "No Country for Old Men (2007 film)",
+   "arc": false,
+   "gap": 15,
+   "judge_index": 57
+  },
+  {
+   "slug": "amy-dunne",
+   "name": "Amy Dunne",
+   "version": "Gone Girl (2014 film)",
+   "arc": false,
+   "gap": 16,
+   "judge_index": 79
+  },
+  {
+   "slug": "joffrey-baratheon",
+   "name": "Joffrey Baratheon",
+   "version": "Game of Thrones (TV series)",
+   "arc": false,
+   "gap": 18,
+   "judge_index": 74
+  },
+  {
+   "slug": "cersei-lannister",
+   "name": "Cersei Lannister",
+   "version": "Game of Thrones (TV series)",
+   "arc": false,
+   "gap": 16,
+   "judge_index": 69
+  },
+  {
+   "slug": "walter-white",
+   "name": "Walter White",
+   "version": "Breaking Bad (TV series)",
+   "arc": true,
+   "gap": 20,
+   "judge_index": 75
+  },
+  {
+   "slug": "tom-ripley",
+   "name": "Tom Ripley",
+   "version": "The Talented Mr. Ripley (1999 film)",
+   "arc": false,
+   "gap": 17,
+   "judge_index": 70
+  },
+  {
+   "slug": "annie-wilkes",
+   "name": "Annie Wilkes",
+   "version": "Misery (1990 film)",
+   "arc": false,
+   "gap": 21,
+   "judge_index": 65
+  },
+  {
+   "slug": "the-joker",
+   "name": "The Joker",
+   "version": "The Dark Knight (2008 film)",
+   "arc": false,
+   "gap": 13,
+   "judge_index": 89
+  },
+  {
+   "slug": "iago",
+   "name": "Iago",
+   "version": "Othello (Shakespeare)",
+   "arc": false,
+   "gap": 12,
+   "judge_index": 76
+  },
+  {
+   "slug": "lady-macbeth",
+   "name": "Lady Macbeth",
+   "version": "Macbeth (Shakespeare)",
+   "arc": true,
+   "gap": 21,
+   "judge_index": 59
+  },
+  {
+   "slug": "dolores-umbridge",
+   "name": "Dolores Umbridge",
+   "version": "Harry Potter (books)",
+   "arc": false,
+   "gap": 17,
+   "judge_index": 72
+  },
+  {
+   "slug": "darth-vader",
+   "name": "Darth Vader",
+   "version": "Star Wars original and prequel trilogies (films)",
+   "arc": true,
+   "gap": 21,
+   "judge_index": 69
+  },
+  {
+   "slug": "zuko",
+   "name": "Zuko",
+   "version": "Avatar: The Last Airbender (animated series)",
+   "arc": true,
+   "gap": 18,
+   "judge_index": 45
+  },
+  {
+   "slug": "jaime-lannister",
+   "name": "Jaime Lannister",
+   "version": "Game of Thrones (TV series)",
+   "arc": true,
+   "gap": 20,
+   "judge_index": 60
+  },
+  {
+   "slug": "severus-snape",
+   "name": "Severus Snape",
+   "version": "Harry Potter (books)",
+   "arc": true,
+   "gap": 22,
+   "judge_index": 49
+  },
+  {
+   "slug": "ebenezer-scrooge",
+   "name": "Ebenezer Scrooge",
+   "version": "A Christmas Carol (Dickens, public domain)",
+   "arc": true,
+   "gap": 20,
+   "judge_index": 39
+  }
+ ],
+ "themes": [
+  "Charm Offensive",
+  "Main Character Energy",
+  "Con Artistry",
+  "Remorse Meter",
+  "Cold Heart",
+  "Thrill Hunger",
+  "Short Fuse",
+  "Track Record"
+ ]
+}

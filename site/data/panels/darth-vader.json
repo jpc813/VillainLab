@@ -1,0 +1,165 @@
+{
+ "character": "Darth Vader",
+ "version": "Star Wars original and prequel trilogies (films)",
+ "pregenerated": true,
+ "spoilers": true,
+ "prosecution": {
+  "agent": "prosecution-rater",
+  "character": "Darth Vader",
+  "version": "Star Wars original and prequel trilogies (films)",
+  "refused": false,
+  "result": {
+   "scores": {
+    "Charm Offensive": 4,
+    "Main Character Energy": 9,
+    "Con Artistry": 6,
+    "Remorse Meter": 8,
+    "Cold Heart": 9,
+    "Thrill Hunger": 7,
+    "Short Fuse": 9,
+    "Track Record": 10
+   },
+   "evidence": {
+    "Short Fuse": "Chokes officers for small failures.",
+    "Track Record": "A long history of killings across the galaxy.",
+    "Cold Heart": "Tortures captives without hesitation."
+   },
+   "villain_index": 78,
+   "closing_argument": "He destroyed planets' worth of lives on command."
+  },
+  "label": "For entertainment only, not a diagnosis."
+ },
+ "defense": {
+  "agent": "defense-rater",
+  "character": "Darth Vader",
+  "version": "Star Wars original and prequel trilogies (films)",
+  "refused": false,
+  "result": {
+   "scores": {
+    "Charm Offensive": 3,
+    "Main Character Energy": 7,
+    "Con Artistry": 4,
+    "Remorse Meter": 4,
+    "Cold Heart": 5,
+    "Thrill Hunger": 5,
+    "Short Fuse": 8,
+    "Track Record": 10
+   },
+   "evidence": {
+    "Remorse Meter": "Turns on the Emperor to save his son.",
+    "Cold Heart": "His fall begins with fear of losing the people he loves.",
+    "Main Character Energy": "Manipulated for years by a master schemer."
+   },
+   "villain_index": 57,
+   "closing_argument": "A man destroyed by fear and manipulation who chose love at the end."
+  },
+  "label": "For entertainment only, not a diagnosis."
+ },
+ "judge": {
+  "agent": "judge",
+  "character": "Darth Vader",
+  "version": "Star Wars original and prequel trilogies (films)",
+  "refused": false,
+  "result": {
+   "gaps": [
+    {
+     "theme": "Remorse Meter",
+     "prosecution": 8,
+     "defense": 4,
+     "why": "Defense centers his final redemption; Prosecution centers decades of cruelty. Then vs. Now explains it."
+    },
+    {
+     "theme": "Cold Heart",
+     "prosecution": 9,
+     "defense": 5,
+     "why": "Defense says his heart was buried, not absent."
+    },
+    {
+     "theme": "Con Artistry",
+     "prosecution": 6,
+     "defense": 4,
+     "why": "Prosecution counts deceptions; Defense notes he's the one being deceived."
+    }
+   ],
+   "judge_scores": {
+    "Charm Offensive": 4,
+    "Main Character Energy": 8,
+    "Con Artistry": 5,
+    "Remorse Meter": 6,
+    "Cold Heart": 7,
+    "Thrill Hunger": 6,
+    "Short Fuse": 9,
+    "Track Record": 10
+   },
+   "villain_index": 69,
+   "dark_triad": {
+    "machiavellianism": "moderate",
+    "narcissism": "high",
+    "psychopathy": "moderate"
+   },
+   "verdict": "An egoist with a short fuse whose final choice argues against true psychopathy. The Track Record, though, stays at 10.",
+   "takeaway": "Same character, same evidence, a 21-point disagreement."
+  },
+  "label": "For entertainment only, not a diagnosis."
+ },
+ "spin": {
+  "agent": "spin-doctor",
+  "character": "Darth Vader",
+  "refused": false,
+  "result": {
+   "reframes": [
+    {
+     "theme": "Short Fuse",
+     "spin": "Holds teams accountable in real time."
+    },
+    {
+     "theme": "Main Character Energy",
+     "spin": "Commanding presence in every boardroom."
+    },
+    {
+     "theme": "Track Record",
+     "spin": "Proven record of large-scale, decisive operations."
+    }
+   ],
+   "title": "Executive VP, Imperial Operations",
+   "wink": "(Spin Doctor's opinions are satire. The Judge is not impressed.)"
+  },
+  "label": "For entertainment only, not a diagnosis."
+ },
+ "then_vs_now": {
+  "agent": "then-vs-now-analyst",
+  "character": "Darth Vader",
+  "refused": false,
+  "result": {
+   "then": {
+    "scores": {
+     "Charm Offensive": 4,
+     "Main Character Energy": 9,
+     "Con Artistry": 6,
+     "Remorse Meter": 8,
+     "Cold Heart": 9,
+     "Thrill Hunger": 7,
+     "Short Fuse": 9,
+     "Track Record": 10
+    },
+    "index": 78
+   },
+   "now": {
+    "scores": {
+     "Charm Offensive": 3,
+     "Main Character Energy": 4,
+     "Con Artistry": 2,
+     "Remorse Meter": 2,
+     "Cold Heart": 3,
+     "Thrill Hunger": 3,
+     "Short Fuse": 4,
+     "Track Record": 10
+    },
+    "index": 39
+   },
+   "track_record_effect": "Track Record stays at 10 even after the redemption, holding the Now index up.",
+   "verdict": "Partly changed: a genuine turn at the end, but history still dominates the score."
+  },
+  "label": "For entertainment only, not a diagnosis."
+ }
+}

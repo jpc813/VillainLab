@@ -1,0 +1,129 @@
+{
+ "character": "Patrick Bateman",
+ "version": "American Psycho (2000 film)",
+ "pregenerated": true,
+ "spoilers": false,
+ "prosecution": {
+  "agent": "prosecution-rater",
+  "character": "Patrick Bateman",
+  "version": "American Psycho (2000 film)",
+  "refused": false,
+  "result": {
+   "scores": {
+    "Charm Offensive": 6,
+    "Main Character Energy": 10,
+    "Con Artistry": 7,
+    "Remorse Meter": 10,
+    "Cold Heart": 10,
+    "Thrill Hunger": 8,
+    "Short Fuse": 8,
+    "Track Record": 9
+   },
+   "evidence": {
+    "Main Character Energy": "Obsessed with status: business cards, reservations, skincare.",
+    "Cold Heart": "Monologues about pop music while committing violence.",
+    "Short Fuse": "Explodes over trivial slights like a better business card."
+   },
+   "villain_index": 85,
+   "closing_argument": "A man who measures human worth in font weight."
+  },
+  "label": "For entertainment only, not a diagnosis."
+ },
+ "defense": {
+  "agent": "defense-rater",
+  "character": "Patrick Bateman",
+  "version": "American Psycho (2000 film)",
+  "refused": false,
+  "result": {
+   "scores": {
+    "Charm Offensive": 5,
+    "Main Character Energy": 9,
+    "Con Artistry": 5,
+    "Remorse Meter": 7,
+    "Cold Heart": 8,
+    "Thrill Hunger": 6,
+    "Short Fuse": 7,
+    "Track Record": 6
+   },
+   "evidence": {
+    "Track Record": "The film leaves open whether the killings happened at all.",
+    "Remorse Meter": "He breaks down and confesses, which suggests something inside him is screaming.",
+    "Charm Offensive": "His charm is paper-thin; colleagues barely notice him."
+   },
+   "villain_index": 66,
+   "closing_argument": "Unreliable narrator: we may be judging a fantasy, not a man."
+  },
+  "label": "For entertainment only, not a diagnosis."
+ },
+ "judge": {
+  "agent": "judge",
+  "character": "Patrick Bateman",
+  "version": "American Psycho (2000 film)",
+  "refused": false,
+  "result": {
+   "gaps": [
+    {
+     "theme": "Track Record",
+     "prosecution": 9,
+     "defense": 6,
+     "why": "The big split: Prosecution takes every killing at face value; Defense leans on the film's deliberate ambiguity."
+    },
+    {
+     "theme": "Remorse Meter",
+     "prosecution": 10,
+     "defense": 7,
+     "why": "Defense treats his breakdown as remorse; the Judge reads it as panic about himself."
+    },
+    {
+     "theme": "Con Artistry",
+     "prosecution": 7,
+     "defense": 5,
+     "why": "Prosecution credits him with cunning; Defense notes he is often clumsy and nearly caught."
+    }
+   ],
+   "judge_scores": {
+    "Charm Offensive": 5,
+    "Main Character Energy": 10,
+    "Con Artistry": 6,
+    "Remorse Meter": 9,
+    "Cold Heart": 9,
+    "Thrill Hunger": 7,
+    "Short Fuse": 8,
+    "Track Record": 8
+   },
+   "villain_index": 78,
+   "dark_triad": {
+    "machiavellianism": "moderate",
+    "narcissism": "high",
+    "psychopathy": "high"
+   },
+   "verdict": "An egoist first, with a predator's coldness and a very short fuse. Whether the crimes are real changes the Track Record, not the emptiness.",
+   "takeaway": "Same character, same evidence, a 19-point disagreement."
+  },
+  "label": "For entertainment only, not a diagnosis."
+ },
+ "spin": {
+  "agent": "spin-doctor",
+  "character": "Patrick Bateman",
+  "refused": false,
+  "result": {
+   "reframes": [
+    {
+     "theme": "Main Character Energy",
+     "spin": "Visionary personal branding; obsessive about premium stationery standards."
+    },
+    {
+     "theme": "Short Fuse",
+     "spin": "Bias for rapid, decisive action in high-pressure social settings."
+    },
+    {
+     "theme": "Cold Heart",
+     "spin": "Keeps emotions completely out of performance reviews."
+    }
+   ],
+   "title": "VP of Mergers and Acquisitions (Brand Excellence)",
+   "wink": "(Spin Doctor's opinions are satire. The Judge is not impressed.)"
+  },
+  "label": "For entertainment only, not a diagnosis."
+ }
+}

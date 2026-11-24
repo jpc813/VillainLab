@@ -1,0 +1,165 @@
+{
+ "character": "Jaime Lannister",
+ "version": "Game of Thrones (TV series)",
+ "pregenerated": true,
+ "spoilers": true,
+ "prosecution": {
+  "agent": "prosecution-rater",
+  "character": "Jaime Lannister",
+  "version": "Game of Thrones (TV series)",
+  "refused": false,
+  "result": {
+   "scores": {
+    "Charm Offensive": 8,
+    "Main Character Energy": 8,
+    "Con Artistry": 5,
+    "Remorse Meter": 6,
+    "Cold Heart": 7,
+    "Thrill Hunger": 8,
+    "Short Fuse": 6,
+    "Track Record": 8
+   },
+   "evidence": {
+    "Cold Heart": "Pushes a child from a tower in the first episode.",
+    "Main Character Energy": "Arrogant swordsman who mocks others.",
+    "Track Record": "Known as 'Kingslayer.'"
+   },
+   "villain_index": 70,
+   "closing_argument": "His first act in the story is attempting to kill a child."
+  },
+  "label": "For entertainment only, not a diagnosis."
+ },
+ "defense": {
+  "agent": "defense-rater",
+  "character": "Jaime Lannister",
+  "version": "Game of Thrones (TV series)",
+  "refused": false,
+  "result": {
+   "scores": {
+    "Charm Offensive": 7,
+    "Main Character Energy": 6,
+    "Con Artistry": 3,
+    "Remorse Meter": 3,
+    "Cold Heart": 4,
+    "Thrill Hunger": 6,
+    "Short Fuse": 5,
+    "Track Record": 6
+   },
+   "evidence": {
+    "Remorse Meter": "Grows ashamed of his past and seeks honor.",
+    "Track Record": "Killed the king to stop him from burning the city.",
+    "Cold Heart": "Saves Brienne at great risk to himself."
+   },
+   "villain_index": 50,
+   "closing_argument": "A man misjudged for his one great good deed, slowly becoming who he should have been."
+  },
+  "label": "For entertainment only, not a diagnosis."
+ },
+ "judge": {
+  "agent": "judge",
+  "character": "Jaime Lannister",
+  "version": "Game of Thrones (TV series)",
+  "refused": false,
+  "result": {
+   "gaps": [
+    {
+     "theme": "Remorse Meter",
+     "prosecution": 6,
+     "defense": 3,
+     "why": "Defense scores the later Jaime; Prosecution the early one."
+    },
+    {
+     "theme": "Track Record",
+     "prosecution": 8,
+     "defense": 6,
+     "why": "Defense argues the 'Kingslayer' act was heroic; the Judge agrees it shouldn't count against him."
+    },
+    {
+     "theme": "Cold Heart",
+     "prosecution": 7,
+     "defense": 4,
+     "why": "The tower scene is hard to excuse; the Judge keeps Cold Heart moderate."
+    }
+   ],
+   "judge_scores": {
+    "Charm Offensive": 7,
+    "Main Character Energy": 7,
+    "Con Artistry": 4,
+    "Remorse Meter": 5,
+    "Cold Heart": 6,
+    "Thrill Hunger": 7,
+    "Short Fuse": 5,
+    "Track Record": 7
+   },
+   "villain_index": 60,
+   "dark_triad": {
+    "machiavellianism": "moderate",
+    "narcissism": "high",
+    "psychopathy": "moderate"
+   },
+   "verdict": "An arrogant egoist who grows a conscience. Not a psychopath, though the tower scene keeps him off the angel list.",
+   "takeaway": "Same character, same evidence, a 20-point disagreement."
+  },
+  "label": "For entertainment only, not a diagnosis."
+ },
+ "spin": {
+  "agent": "spin-doctor",
+  "character": "Jaime Lannister",
+  "refused": false,
+  "result": {
+   "reframes": [
+    {
+     "theme": "Thrill Hunger",
+     "spin": "Thrives in high-stakes, fast-moving environments."
+    },
+    {
+     "theme": "Charm Offensive",
+     "spin": "Effortless executive presence."
+    },
+    {
+     "theme": "Track Record",
+     "spin": "Experienced in difficult leadership transitions."
+    }
+   ],
+   "title": "Head of Royal Security (Former)",
+   "wink": "(Spin Doctor's opinions are satire. The Judge is not impressed.)"
+  },
+  "label": "For entertainment only, not a diagnosis."
+ },
+ "then_vs_now": {
+  "agent": "then-vs-now-analyst",
+  "character": "Jaime Lannister",
+  "refused": false,
+  "result": {
+   "then": {
+    "scores": {
+     "Charm Offensive": 8,
+     "Main Character Energy": 9,
+     "Con Artistry": 5,
+     "Remorse Meter": 7,
+     "Cold Heart": 8,
+     "Thrill Hunger": 8,
+     "Short Fuse": 6,
+     "Track Record": 7
+    },
+    "index": 72
+   },
+   "now": {
+    "scores": {
+     "Charm Offensive": 5,
+     "Main Character Energy": 4,
+     "Con Artistry": 2,
+     "Remorse Meter": 2,
+     "Cold Heart": 3,
+     "Thrill Hunger": 5,
+     "Short Fuse": 4,
+     "Track Record": 7
+    },
+    "index": 40
+   },
+   "track_record_effect": "Track Record stays at 7 because the early crimes don't disappear.",
+   "verdict": "Partly changed, though the show's ending complicates it."
+  },
+  "label": "For entertainment only, not a diagnosis."
+ }
+}

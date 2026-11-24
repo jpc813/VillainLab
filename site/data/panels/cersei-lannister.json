@@ -1,0 +1,129 @@
+{
+ "character": "Cersei Lannister",
+ "version": "Game of Thrones (TV series)",
+ "pregenerated": true,
+ "spoilers": false,
+ "prosecution": {
+  "agent": "prosecution-rater",
+  "character": "Cersei Lannister",
+  "version": "Game of Thrones (TV series)",
+  "refused": false,
+  "result": {
+   "scores": {
+    "Charm Offensive": 6,
+    "Main Character Energy": 10,
+    "Con Artistry": 9,
+    "Remorse Meter": 7,
+    "Cold Heart": 8,
+    "Thrill Hunger": 4,
+    "Short Fuse": 7,
+    "Track Record": 9
+   },
+   "evidence": {
+    "Con Artistry": "Schemes against rivals through poison, alliances and betrayal.",
+    "Main Character Energy": "Believes she alone deserves to rule.",
+    "Track Record": "Responsible for many deaths in her rise."
+   },
+   "villain_index": 75,
+   "closing_argument": "She'd burn the city to keep the throne, and she does."
+  },
+  "label": "For entertainment only, not a diagnosis."
+ },
+ "defense": {
+  "agent": "defense-rater",
+  "character": "Cersei Lannister",
+  "version": "Game of Thrones (TV series)",
+  "refused": false,
+  "result": {
+   "scores": {
+    "Charm Offensive": 6,
+    "Main Character Energy": 9,
+    "Con Artistry": 8,
+    "Remorse Meter": 4,
+    "Cold Heart": 4,
+    "Thrill Hunger": 3,
+    "Short Fuse": 6,
+    "Track Record": 7
+   },
+   "evidence": {
+    "Cold Heart": "Fiercely, genuinely loves her children.",
+    "Remorse Meter": "Grieves deeply when her children die.",
+    "Thrill Hunger": "Wants security and power, not thrills."
+   },
+   "villain_index": 59,
+   "closing_argument": "Everything she does, she does to protect her children in a world built to crush women."
+  },
+  "label": "For entertainment only, not a diagnosis."
+ },
+ "judge": {
+  "agent": "judge",
+  "character": "Cersei Lannister",
+  "version": "Game of Thrones (TV series)",
+  "refused": false,
+  "result": {
+   "gaps": [
+    {
+     "theme": "Cold Heart",
+     "prosecution": 8,
+     "defense": 4,
+     "why": "The headline: Defense says her love for her children proves warmth; Prosecution says it stops at her own family."
+    },
+    {
+     "theme": "Remorse Meter",
+     "prosecution": 7,
+     "defense": 4,
+     "why": "Defense cites her grief; the Judge notes she grieves her own losses, not her victims'."
+    },
+    {
+     "theme": "Short Fuse",
+     "prosecution": 7,
+     "defense": 6,
+     "why": "Prosecution counts her rash moves; Defense calls them calculated gambles."
+    }
+   ],
+   "judge_scores": {
+    "Charm Offensive": 6,
+    "Main Character Energy": 10,
+    "Con Artistry": 9,
+    "Remorse Meter": 6,
+    "Cold Heart": 6,
+    "Thrill Hunger": 3,
+    "Short Fuse": 6,
+    "Track Record": 9
+   },
+   "villain_index": 69,
+   "dark_triad": {
+    "machiavellianism": "high",
+    "narcissism": "high",
+    "psychopathy": "low"
+   },
+   "verdict": "A schemer and an egoist, but not a psychopath: her real love for her children pushes hard against the cold-predator profile.",
+   "takeaway": "Same character, same evidence, a 16-point disagreement."
+  },
+  "label": "For entertainment only, not a diagnosis."
+ },
+ "spin": {
+  "agent": "spin-doctor",
+  "character": "Cersei Lannister",
+  "refused": false,
+  "result": {
+   "reframes": [
+    {
+     "theme": "Con Artistry",
+     "spin": "Elite stakeholder management across competing houses."
+    },
+    {
+     "theme": "Main Character Energy",
+     "spin": "Unshakable confidence in her own leadership."
+    },
+    {
+     "theme": "Track Record",
+     "spin": "Proven record of decisive succession planning."
+    }
+   ],
+   "title": "Chief Strategy Officer, King's Landing",
+   "wink": "(Spin Doctor's opinions are satire. The Judge is not impressed.)"
+  },
+  "label": "For entertainment only, not a diagnosis."
+ }
+}

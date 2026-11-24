@@ -1,0 +1,129 @@
+{
+ "character": "Amy Dunne",
+ "version": "Gone Girl (2014 film)",
+ "pregenerated": true,
+ "spoilers": false,
+ "prosecution": {
+  "agent": "prosecution-rater",
+  "character": "Amy Dunne",
+  "version": "Gone Girl (2014 film)",
+  "refused": false,
+  "result": {
+   "scores": {
+    "Charm Offensive": 9,
+    "Main Character Energy": 10,
+    "Con Artistry": 10,
+    "Remorse Meter": 9,
+    "Cold Heart": 9,
+    "Thrill Hunger": 7,
+    "Short Fuse": 4,
+    "Track Record": 9
+   },
+   "evidence": {
+    "Con Artistry": "Stages her own disappearance and frames her husband.",
+    "Charm Offensive": "Crafts 'Amazing Amy' and the 'cool girl' persona to win people.",
+    "Cold Heart": "Uses and discards people who help her."
+   },
+   "villain_index": 84,
+   "closing_argument": "She didn't just lie; she wrote an entire alternate reality and cast her husband as the villain."
+  },
+  "label": "For entertainment only, not a diagnosis."
+ },
+ "defense": {
+  "agent": "defense-rater",
+  "character": "Amy Dunne",
+  "version": "Gone Girl (2014 film)",
+  "refused": false,
+  "result": {
+   "scores": {
+    "Charm Offensive": 8,
+    "Main Character Energy": 9,
+    "Con Artistry": 9,
+    "Remorse Meter": 6,
+    "Cold Heart": 6,
+    "Thrill Hunger": 5,
+    "Short Fuse": 4,
+    "Track Record": 7
+   },
+   "evidence": {
+    "Remorse Meter": "Her rage comes from real betrayal and humiliation.",
+    "Main Character Energy": "Grew up as a fictional character in her parents' books; identity is a wound.",
+    "Short Fuse": "Everything is planned; nothing is impulsive."
+   },
+   "villain_index": 68,
+   "closing_argument": "A brilliant woman avenging real betrayal. Monstrous methods, understandable fury."
+  },
+  "label": "For entertainment only, not a diagnosis."
+ },
+ "judge": {
+  "agent": "judge",
+  "character": "Amy Dunne",
+  "version": "Gone Girl (2014 film)",
+  "refused": false,
+  "result": {
+   "gaps": [
+    {
+     "theme": "Remorse Meter",
+     "prosecution": 9,
+     "defense": 6,
+     "why": "Defense frames her as wounded; Prosecution notes she never regrets the harm. The Judge sides mostly with Prosecution."
+    },
+    {
+     "theme": "Cold Heart",
+     "prosecution": 9,
+     "defense": 6,
+     "why": "Defense points to her motives; the Judge notes motives explain anger, not indifference to victims."
+    },
+    {
+     "theme": "Track Record",
+     "prosecution": 9,
+     "defense": 7,
+     "why": "Defense discounts her past schemes; the film shows a pattern."
+    }
+   ],
+   "judge_scores": {
+    "Charm Offensive": 9,
+    "Main Character Energy": 10,
+    "Con Artistry": 10,
+    "Remorse Meter": 8,
+    "Cold Heart": 8,
+    "Thrill Hunger": 6,
+    "Short Fuse": 3,
+    "Track Record": 9
+   },
+   "villain_index": 79,
+   "dark_triad": {
+    "machiavellianism": "high",
+    "narcissism": "high",
+    "psychopathy": "moderate"
+   },
+   "verdict": "Master schemer and towering egoist. The predator flavor is there but secondary: she's driven by control and image more than thrill.",
+   "takeaway": "Same character, same evidence, a 16-point disagreement."
+  },
+  "label": "For entertainment only, not a diagnosis."
+ },
+ "spin": {
+  "agent": "spin-doctor",
+  "character": "Amy Dunne",
+  "refused": false,
+  "result": {
+   "reframes": [
+    {
+     "theme": "Con Artistry",
+     "spin": "World-class narrative strategist; owns the story end to end."
+    },
+    {
+     "theme": "Charm Offensive",
+     "spin": "Exceptional personal brand development since childhood."
+    },
+    {
+     "theme": "Main Character Energy",
+     "spin": "Refuses to settle for anything less than perfect."
+    }
+   ],
+   "title": "Chief Storytelling Officer",
+   "wink": "(Spin Doctor's opinions are satire. The Judge is not impressed.)"
+  },
+  "label": "For entertainment only, not a diagnosis."
+ }
+}

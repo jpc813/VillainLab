@@ -1,0 +1,165 @@
+{
+ "character": "Severus Snape",
+ "version": "Harry Potter (books)",
+ "pregenerated": true,
+ "spoilers": true,
+ "prosecution": {
+  "agent": "prosecution-rater",
+  "character": "Severus Snape",
+  "version": "Harry Potter (books)",
+  "refused": false,
+  "result": {
+   "scores": {
+    "Charm Offensive": 3,
+    "Main Character Energy": 7,
+    "Con Artistry": 8,
+    "Remorse Meter": 7,
+    "Cold Heart": 8,
+    "Thrill Hunger": 3,
+    "Short Fuse": 7,
+    "Track Record": 7
+   },
+   "evidence": {
+    "Cold Heart": "Bullies children, especially Harry and Neville.",
+    "Con Artistry": "Double agent; deceives almost everyone.",
+    "Track Record": "Was once a follower of Voldemort."
+   },
+   "villain_index": 62,
+   "closing_argument": "A grown man who spent years tormenting children."
+  },
+  "label": "For entertainment only, not a diagnosis."
+ },
+ "defense": {
+  "agent": "defense-rater",
+  "character": "Severus Snape",
+  "version": "Harry Potter (books)",
+  "refused": false,
+  "result": {
+   "scores": {
+    "Charm Offensive": 2,
+    "Main Character Energy": 5,
+    "Con Artistry": 7,
+    "Remorse Meter": 3,
+    "Cold Heart": 3,
+    "Thrill Hunger": 2,
+    "Short Fuse": 5,
+    "Track Record": 5
+   },
+   "evidence": {
+    "Remorse Meter": "Spends his life atoning for his past.",
+    "Cold Heart": "Protects Harry for years at great personal risk.",
+    "Con Artistry": "His deception serves the side of good."
+   },
+   "villain_index": 40,
+   "closing_argument": "A spy carrying a lifetime of grief and guilt."
+  },
+  "label": "For entertainment only, not a diagnosis."
+ },
+ "judge": {
+  "agent": "judge",
+  "character": "Severus Snape",
+  "version": "Harry Potter (books)",
+  "refused": false,
+  "result": {
+   "gaps": [
+    {
+     "theme": "Cold Heart",
+     "prosecution": 8,
+     "defense": 3,
+     "why": "Defense cites his secret protection; Prosecution his open cruelty. Both are true."
+    },
+    {
+     "theme": "Remorse Meter",
+     "prosecution": 7,
+     "defense": 3,
+     "why": "Defense sees decades of atonement; the Judge agrees: remorse is his whole story."
+    },
+    {
+     "theme": "Short Fuse",
+     "prosecution": 7,
+     "defense": 5,
+     "why": "Prosecution counts his sneering outbursts."
+    }
+   ],
+   "judge_scores": {
+    "Charm Offensive": 2,
+    "Main Character Energy": 6,
+    "Con Artistry": 8,
+    "Remorse Meter": 4,
+    "Cold Heart": 5,
+    "Thrill Hunger": 2,
+    "Short Fuse": 6,
+    "Track Record": 6
+   },
+   "villain_index": 49,
+   "dark_triad": {
+    "machiavellianism": "high",
+    "narcissism": "moderate",
+    "psychopathy": "low"
+   },
+   "verdict": "A schemer by necessity and a bully by temperament, but his lifelong remorse rules out the psychopath label.",
+   "takeaway": "Same character, same evidence, a 22-point disagreement."
+  },
+  "label": "For entertainment only, not a diagnosis."
+ },
+ "spin": {
+  "agent": "spin-doctor",
+  "character": "Severus Snape",
+  "refused": false,
+  "result": {
+   "reframes": [
+    {
+     "theme": "Con Artistry",
+     "spin": "Seasoned double-agent with unmatched discretion."
+    },
+    {
+     "theme": "Short Fuse",
+     "spin": "Gives direct, unfiltered feedback to junior staff."
+    },
+    {
+     "theme": "Main Character Energy",
+     "spin": "Deep subject-matter expertise in chemistry."
+    }
+   ],
+   "title": "Head of Potions and Special Projects",
+   "wink": "(Spin Doctor's opinions are satire. The Judge is not impressed.)"
+  },
+  "label": "For entertainment only, not a diagnosis."
+ },
+ "then_vs_now": {
+  "agent": "then-vs-now-analyst",
+  "character": "Severus Snape",
+  "refused": false,
+  "result": {
+   "then": {
+    "scores": {
+     "Charm Offensive": 3,
+     "Main Character Energy": 7,
+     "Con Artistry": 8,
+     "Remorse Meter": 8,
+     "Cold Heart": 8,
+     "Thrill Hunger": 3,
+     "Short Fuse": 7,
+     "Track Record": 6
+    },
+    "index": 62
+   },
+   "now": {
+    "scores": {
+     "Charm Offensive": 2,
+     "Main Character Energy": 5,
+     "Con Artistry": 8,
+     "Remorse Meter": 2,
+     "Cold Heart": 4,
+     "Thrill Hunger": 2,
+     "Short Fuse": 6,
+     "Track Record": 6
+    },
+    "index": 44
+   },
+   "track_record_effect": "Track Record stays at 6; the big change is in Remorse, not behavior.",
+   "verdict": "A reveal more than a redemption: he was changed all along, we just didn't know."
+  },
+  "label": "For entertainment only, not a diagnosis."
+ }
+}

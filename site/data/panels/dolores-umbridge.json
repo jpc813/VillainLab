@@ -1,0 +1,129 @@
+{
+ "character": "Dolores Umbridge",
+ "version": "Harry Potter (books)",
+ "pregenerated": true,
+ "spoilers": false,
+ "prosecution": {
+  "agent": "prosecution-rater",
+  "character": "Dolores Umbridge",
+  "version": "Harry Potter (books)",
+  "refused": false,
+  "result": {
+   "scores": {
+    "Charm Offensive": 6,
+    "Main Character Energy": 9,
+    "Con Artistry": 8,
+    "Remorse Meter": 10,
+    "Cold Heart": 10,
+    "Thrill Hunger": 5,
+    "Short Fuse": 6,
+    "Track Record": 9
+   },
+   "evidence": {
+    "Cold Heart": "Forces students to carve lines into their own hands.",
+    "Main Character Energy": "Believes she embodies order and the Ministry.",
+    "Remorse Meter": "Shows no regret, only righteous satisfaction."
+   },
+   "villain_index": 79,
+   "closing_argument": "Sweetness on the outside, cruelty on the inside."
+  },
+  "label": "For entertainment only, not a diagnosis."
+ },
+ "defense": {
+  "agent": "defense-rater",
+  "character": "Dolores Umbridge",
+  "version": "Harry Potter (books)",
+  "refused": false,
+  "result": {
+   "scores": {
+    "Charm Offensive": 5,
+    "Main Character Energy": 8,
+    "Con Artistry": 6,
+    "Remorse Meter": 8,
+    "Cold Heart": 8,
+    "Thrill Hunger": 3,
+    "Short Fuse": 5,
+    "Track Record": 7
+   },
+   "evidence": {
+    "Thrill Hunger": "Loves rules and order, not risk.",
+    "Con Artistry": "Hides nothing: she's openly authoritarian.",
+    "Short Fuse": "Usually composed and controlled."
+   },
+   "villain_index": 62,
+   "closing_argument": "A bureaucrat devoted to rules, not a thrill-seeking predator."
+  },
+  "label": "For entertainment only, not a diagnosis."
+ },
+ "judge": {
+  "agent": "judge",
+  "character": "Dolores Umbridge",
+  "version": "Harry Potter (books)",
+  "refused": false,
+  "result": {
+   "gaps": [
+    {
+     "theme": "Con Artistry",
+     "prosecution": 8,
+     "defense": 6,
+     "why": "Prosecution sees a manipulator; Defense says she's openly what she is."
+    },
+    {
+     "theme": "Thrill Hunger",
+     "prosecution": 5,
+     "defense": 3,
+     "why": "Both agree she isn't thrill-seeking; Prosecution reads her enjoyment of punishment as a thrill."
+    },
+    {
+     "theme": "Remorse Meter",
+     "prosecution": 10,
+     "defense": 8,
+     "why": "Defense says she believes she's right; the Judge notes belief isn't remorse."
+    }
+   ],
+   "judge_scores": {
+    "Charm Offensive": 6,
+    "Main Character Energy": 9,
+    "Con Artistry": 7,
+    "Remorse Meter": 9,
+    "Cold Heart": 9,
+    "Thrill Hunger": 4,
+    "Short Fuse": 6,
+    "Track Record": 8
+   },
+   "villain_index": 72,
+   "dark_triad": {
+    "machiavellianism": "moderate",
+    "narcissism": "high",
+    "psychopathy": "high"
+   },
+   "verdict": "A self-righteous egoist with a cold, cruel streak. Sadism in cardigans.",
+   "takeaway": "Same character, same evidence, a 17-point disagreement."
+  },
+  "label": "For entertainment only, not a diagnosis."
+ },
+ "spin": {
+  "agent": "spin-doctor",
+  "character": "Dolores Umbridge",
+  "refused": false,
+  "result": {
+   "reframes": [
+    {
+     "theme": "Main Character Energy",
+     "spin": "Passionate champion of process and compliance."
+    },
+    {
+     "theme": "Cold Heart",
+     "spin": "Firm, consistent discipline with no favoritism."
+    },
+    {
+     "theme": "Charm Offensive",
+     "spin": "Warm, approachable leadership style (with stationery)."
+    }
+   ],
+   "title": "Director of Educational Standards",
+   "wink": "(Spin Doctor's opinions are satire. The Judge is not impressed.)"
+  },
+  "label": "For entertainment only, not a diagnosis."
+ }
+}

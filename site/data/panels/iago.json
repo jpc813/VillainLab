@@ -1,0 +1,129 @@
+{
+ "character": "Iago",
+ "version": "Othello (Shakespeare)",
+ "pregenerated": true,
+ "spoilers": false,
+ "prosecution": {
+  "agent": "prosecution-rater",
+  "character": "Iago",
+  "version": "Othello (Shakespeare)",
+  "refused": false,
+  "result": {
+   "scores": {
+    "Charm Offensive": 10,
+    "Main Character Energy": 8,
+    "Con Artistry": 10,
+    "Remorse Meter": 9,
+    "Cold Heart": 9,
+    "Thrill Hunger": 7,
+    "Short Fuse": 3,
+    "Track Record": 8
+   },
+   "evidence": {
+    "Con Artistry": "Manipulates nearly every character in the play.",
+    "Charm Offensive": "Everyone calls him 'honest Iago.'",
+    "Cold Heart": "Destroys lives with no clear reason."
+   },
+   "villain_index": 80,
+   "closing_argument": "The most trusted man in the play is the only one who never told the truth."
+  },
+  "label": "For entertainment only, not a diagnosis."
+ },
+ "defense": {
+  "agent": "defense-rater",
+  "character": "Iago",
+  "version": "Othello (Shakespeare)",
+  "refused": false,
+  "result": {
+   "scores": {
+    "Charm Offensive": 9,
+    "Main Character Energy": 7,
+    "Con Artistry": 9,
+    "Remorse Meter": 7,
+    "Cold Heart": 7,
+    "Thrill Hunger": 6,
+    "Short Fuse": 3,
+    "Track Record": 6
+   },
+   "evidence": {
+    "Main Character Energy": "Passed over for promotion; feels deeply wronged.",
+    "Remorse Meter": "Offers several (if shifting) grievances, suggesting real pain.",
+    "Track Record": "Before the play, he has no known history of violence."
+   },
+   "villain_index": 68,
+   "closing_argument": "A bitter, overlooked soldier whose resentment curdled into revenge."
+  },
+  "label": "For entertainment only, not a diagnosis."
+ },
+ "judge": {
+  "agent": "judge",
+  "character": "Iago",
+  "version": "Othello (Shakespeare)",
+  "refused": false,
+  "result": {
+   "gaps": [
+    {
+     "theme": "Track Record",
+     "prosecution": 8,
+     "defense": 6,
+     "why": "Defense notes no history before the play; Prosecution scores what he does in it."
+    },
+    {
+     "theme": "Remorse Meter",
+     "prosecution": 9,
+     "defense": 7,
+     "why": "Defense sees grievance; the Judge notes he never regrets a single victim."
+    },
+    {
+     "theme": "Thrill Hunger",
+     "prosecution": 7,
+     "defense": 6,
+     "why": "Prosecution says he enjoys the game; Defense says it is revenge, not sport."
+    }
+   ],
+   "judge_scores": {
+    "Charm Offensive": 10,
+    "Main Character Energy": 8,
+    "Con Artistry": 10,
+    "Remorse Meter": 9,
+    "Cold Heart": 8,
+    "Thrill Hunger": 6,
+    "Short Fuse": 3,
+    "Track Record": 7
+   },
+   "villain_index": 76,
+   "dark_triad": {
+    "machiavellianism": "high",
+    "narcissism": "moderate",
+    "psychopathy": "high"
+   },
+   "verdict": "The purest schemer in the lab: a Machiavellian with a cold heart and no visible remorse.",
+   "takeaway": "Same character, same evidence, a 12-point disagreement."
+  },
+  "label": "For entertainment only, not a diagnosis."
+ },
+ "spin": {
+  "agent": "spin-doctor",
+  "character": "Iago",
+  "refused": false,
+  "result": {
+   "reframes": [
+    {
+     "theme": "Con Artistry",
+     "spin": "Elite influencer; can align any stakeholder around a narrative."
+    },
+    {
+     "theme": "Charm Offensive",
+     "spin": "Universally described as trustworthy by colleagues."
+    },
+    {
+     "theme": "Main Character Energy",
+     "spin": "Knows his value and isn't afraid to advocate for it."
+    }
+   ],
+   "title": "Senior Director of Internal Communications",
+   "wink": "(Spin Doctor's opinions are satire. The Judge is not impressed.)"
+  },
+  "label": "For entertainment only, not a diagnosis."
+ }
+}

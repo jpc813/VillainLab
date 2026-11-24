@@ -1,0 +1,129 @@
+{
+ "character": "Tom Ripley",
+ "version": "The Talented Mr. Ripley (1999 film)",
+ "pregenerated": true,
+ "spoilers": false,
+ "prosecution": {
+  "agent": "prosecution-rater",
+  "character": "Tom Ripley",
+  "version": "The Talented Mr. Ripley (1999 film)",
+  "refused": false,
+  "result": {
+   "scores": {
+    "Charm Offensive": 10,
+    "Main Character Energy": 7,
+    "Con Artistry": 10,
+    "Remorse Meter": 8,
+    "Cold Heart": 8,
+    "Thrill Hunger": 6,
+    "Short Fuse": 5,
+    "Track Record": 8
+   },
+   "evidence": {
+    "Con Artistry": "Impersonates a wealthy man and forges his way into a new life.",
+    "Charm Offensive": "Charms everyone he meets.",
+    "Cold Heart": "Kills to keep the lie going."
+   },
+   "villain_index": 78,
+   "closing_argument": "Talented, yes. At becoming whoever he needs to be."
+  },
+  "label": "For entertainment only, not a diagnosis."
+ },
+ "defense": {
+  "agent": "defense-rater",
+  "character": "Tom Ripley",
+  "version": "The Talented Mr. Ripley (1999 film)",
+  "refused": false,
+  "result": {
+   "scores": {
+    "Charm Offensive": 9,
+    "Main Character Energy": 5,
+    "Con Artistry": 9,
+    "Remorse Meter": 5,
+    "Cold Heart": 5,
+    "Thrill Hunger": 4,
+    "Short Fuse": 6,
+    "Track Record": 6
+   },
+   "evidence": {
+    "Remorse Meter": "Visibly shaken after his first killing.",
+    "Short Fuse": "His first killing is panicked, not planned.",
+    "Main Character Energy": "Desperate to belong, not to rule."
+   },
+   "villain_index": 61,
+   "closing_argument": "A lonely outsider who wanted a life he could never have and panicked his way into crime."
+  },
+  "label": "For entertainment only, not a diagnosis."
+ },
+ "judge": {
+  "agent": "judge",
+  "character": "Tom Ripley",
+  "version": "The Talented Mr. Ripley (1999 film)",
+  "refused": false,
+  "result": {
+   "gaps": [
+    {
+     "theme": "Remorse Meter",
+     "prosecution": 8,
+     "defense": 5,
+     "why": "Defense cites his distress; Prosecution notes he keeps going anyway. The Judge lands in the middle."
+    },
+    {
+     "theme": "Cold Heart",
+     "prosecution": 8,
+     "defense": 5,
+     "why": "Defense sees loneliness; Prosecution sees someone who uses love as a tool."
+    },
+    {
+     "theme": "Main Character Energy",
+     "prosecution": 7,
+     "defense": 5,
+     "why": "Prosecution reads ambition; Defense reads longing to belong."
+    }
+   ],
+   "judge_scores": {
+    "Charm Offensive": 10,
+    "Main Character Energy": 6,
+    "Con Artistry": 10,
+    "Remorse Meter": 6,
+    "Cold Heart": 7,
+    "Thrill Hunger": 5,
+    "Short Fuse": 5,
+    "Track Record": 7
+   },
+   "villain_index": 70,
+   "dark_triad": {
+    "machiavellianism": "high",
+    "narcissism": "moderate",
+    "psychopathy": "moderate"
+   },
+   "verdict": "A gifted schemer first. The predator side grows as the lies pile up, but longing, not coldness, starts it all.",
+   "takeaway": "Same character, same evidence, a 17-point disagreement."
+  },
+  "label": "For entertainment only, not a diagnosis."
+ },
+ "spin": {
+  "agent": "spin-doctor",
+  "character": "Tom Ripley",
+  "refused": false,
+  "result": {
+   "reframes": [
+    {
+     "theme": "Con Artistry",
+     "spin": "Unmatched adaptability; can step into any role on day one."
+    },
+    {
+     "theme": "Charm Offensive",
+     "spin": "Exceptional networking skills in international settings."
+    },
+    {
+     "theme": "Track Record",
+     "spin": "Track record of seamless identity transitions."
+    }
+   ],
+   "title": "Director of Talent",
+   "wink": "(Spin Doctor's opinions are satire. The Judge is not impressed.)"
+  },
+  "label": "For entertainment only, not a diagnosis."
+ }
+}

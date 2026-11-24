@@ -1,0 +1,129 @@
+{
+ "character": "Anton Chigurh",
+ "version": "No Country for Old Men (2007 film)",
+ "pregenerated": true,
+ "spoilers": false,
+ "prosecution": {
+  "agent": "prosecution-rater",
+  "character": "Anton Chigurh",
+  "version": "No Country for Old Men (2007 film)",
+  "refused": false,
+  "result": {
+   "scores": {
+    "Charm Offensive": 2,
+    "Main Character Energy": 7,
+    "Con Artistry": 4,
+    "Remorse Meter": 10,
+    "Cold Heart": 10,
+    "Thrill Hunger": 6,
+    "Short Fuse": 4,
+    "Track Record": 10
+   },
+   "evidence": {
+    "Cold Heart": "Kills bystanders without a flicker of feeling.",
+    "Remorse Meter": "Shows zero regret, ever.",
+    "Track Record": "Leaves a long trail of bodies across Texas."
+   },
+   "villain_index": 66,
+   "closing_argument": "A coin toss is his only conscience."
+  },
+  "label": "For entertainment only, not a diagnosis."
+ },
+ "defense": {
+  "agent": "defense-rater",
+  "character": "Anton Chigurh",
+  "version": "No Country for Old Men (2007 film)",
+  "refused": false,
+  "result": {
+   "scores": {
+    "Charm Offensive": 1,
+    "Main Character Energy": 6,
+    "Con Artistry": 2,
+    "Remorse Meter": 8,
+    "Cold Heart": 9,
+    "Thrill Hunger": 3,
+    "Short Fuse": 2,
+    "Track Record": 10
+   },
+   "evidence": {
+    "Main Character Energy": "Follows a rigid personal code, even when it costs him.",
+    "Short Fuse": "Calm and methodical; never impulsive.",
+    "Charm Offensive": "Has no interest in charming anyone."
+   },
+   "villain_index": 51,
+   "closing_argument": "Not a thrill-seeker but a grim principle walking. Terrifying, but consistent."
+  },
+  "label": "For entertainment only, not a diagnosis."
+ },
+ "judge": {
+  "agent": "judge",
+  "character": "Anton Chigurh",
+  "version": "No Country for Old Men (2007 film)",
+  "refused": false,
+  "result": {
+   "gaps": [
+    {
+     "theme": "Thrill Hunger",
+     "prosecution": 6,
+     "defense": 3,
+     "why": "Prosecution says he enjoys the hunt; Defense says he treats killing like a chore. The Judge leans Defense."
+    },
+    {
+     "theme": "Con Artistry",
+     "prosecution": 4,
+     "defense": 2,
+     "why": "Prosecution sees deception; the Judge sees almost none: he tells victims exactly what he'll do."
+    },
+    {
+     "theme": "Short Fuse",
+     "prosecution": 4,
+     "defense": 2,
+     "why": "Both agree he is controlled; Prosecution scores up for sudden violence."
+    }
+   ],
+   "judge_scores": {
+    "Charm Offensive": 1,
+    "Main Character Energy": 6,
+    "Con Artistry": 3,
+    "Remorse Meter": 10,
+    "Cold Heart": 10,
+    "Thrill Hunger": 4,
+    "Short Fuse": 2,
+    "Track Record": 10
+   },
+   "villain_index": 57,
+   "dark_triad": {
+    "machiavellianism": "low",
+    "narcissism": "moderate",
+    "psychopathy": "high"
+   },
+   "verdict": "Pure cold predator with almost no schemer or egoist in him. He doesn't lie or charm. He just doesn't care.",
+   "takeaway": "Same character, same evidence, a 15-point disagreement."
+  },
+  "label": "For entertainment only, not a diagnosis."
+ },
+ "spin": {
+  "agent": "spin-doctor",
+  "character": "Anton Chigurh",
+  "refused": false,
+  "result": {
+   "reframes": [
+    {
+     "theme": "Remorse Meter",
+     "spin": "Never wastes time on regret; fully committed to outcomes."
+    },
+    {
+     "theme": "Cold Heart",
+     "spin": "Consistent, policy-driven decisions with zero favoritism."
+    },
+    {
+     "theme": "Main Character Energy",
+     "spin": "Strong personal operating principles; famously sticks to the process."
+    }
+   ],
+   "title": "Head of Process Integrity",
+   "wink": "(Spin Doctor's opinions are satire. The Judge is not impressed.)"
+  },
+  "label": "For entertainment only, not a diagnosis."
+ }
+}

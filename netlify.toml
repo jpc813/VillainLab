@@ -1,0 +1,19 @@
+# The Villain Lab: Netlify configuration
+# Secrets (ANTHROPIC_API_KEY, optional APP_PASSWORD) are set in the Netlify UI,
+# never here: variables in this file are not available to functions at runtime.
+
+[build]
+  command = "node scripts/build-prompts.mjs"
+  publish = "site"
+  functions = "netlify/functions"
+
+[functions]
+  node_bundler = "esbuild"
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    Referrer-Policy = "no-referrer"
+    X-Content-Type-Options = "nosniff"
+    Permissions-Policy = "camera=(), microphone=(), geolocation=(), interest-cohort=()"
+    Content-Security-Policy = "default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; connect-src 'self'; frame-ancestors 'none'; base-uri 'self'; form-action 'self'"

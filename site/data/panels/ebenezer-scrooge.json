@@ -1,0 +1,165 @@
+{
+ "character": "Ebenezer Scrooge",
+ "version": "A Christmas Carol (Dickens, public domain)",
+ "pregenerated": true,
+ "spoilers": true,
+ "prosecution": {
+  "agent": "prosecution-rater",
+  "character": "Ebenezer Scrooge",
+  "version": "A Christmas Carol (Dickens, public domain)",
+  "refused": false,
+  "result": {
+   "scores": {
+    "Charm Offensive": 1,
+    "Main Character Energy": 7,
+    "Con Artistry": 4,
+    "Remorse Meter": 7,
+    "Cold Heart": 9,
+    "Thrill Hunger": 1,
+    "Short Fuse": 5,
+    "Track Record": 5
+   },
+   "evidence": {
+    "Cold Heart": "Refuses help to the poor and underpays his clerk.",
+    "Main Character Energy": "Sees himself as above charity.",
+    "Remorse Meter": "Shows no concern for those who suffer."
+   },
+   "villain_index": 49,
+   "closing_argument": "A man who preferred the poor to die and 'decrease the surplus population.'"
+  },
+  "label": "For entertainment only, not a diagnosis."
+ },
+ "defense": {
+  "agent": "defense-rater",
+  "character": "Ebenezer Scrooge",
+  "version": "A Christmas Carol (Dickens, public domain)",
+  "refused": false,
+  "result": {
+   "scores": {
+    "Charm Offensive": 1,
+    "Main Character Energy": 5,
+    "Con Artistry": 2,
+    "Remorse Meter": 3,
+    "Cold Heart": 5,
+    "Thrill Hunger": 1,
+    "Short Fuse": 3,
+    "Track Record": 3
+   },
+   "evidence": {
+    "Remorse Meter": "Weeps at his own past and changes overnight.",
+    "Cold Heart": "Once loved deeply and lost it.",
+    "Thrill Hunger": "A cautious miser, not a risk taker."
+   },
+   "villain_index": 29,
+   "closing_argument": "A lonely, frightened man who rediscovered his heart."
+  },
+  "label": "For entertainment only, not a diagnosis."
+ },
+ "judge": {
+  "agent": "judge",
+  "character": "Ebenezer Scrooge",
+  "version": "A Christmas Carol (Dickens, public domain)",
+  "refused": false,
+  "result": {
+   "gaps": [
+    {
+     "theme": "Remorse Meter",
+     "prosecution": 7,
+     "defense": 3,
+     "why": "Defense scores the transformed Scrooge; Prosecution the original."
+    },
+    {
+     "theme": "Cold Heart",
+     "prosecution": 9,
+     "defense": 5,
+     "why": "Prosecution reads indifference; Defense reads buried grief."
+    },
+    {
+     "theme": "Main Character Energy",
+     "prosecution": 7,
+     "defense": 5,
+     "why": "Small gap: both see self-importance."
+    }
+   ],
+   "judge_scores": {
+    "Charm Offensive": 1,
+    "Main Character Energy": 6,
+    "Con Artistry": 3,
+    "Remorse Meter": 5,
+    "Cold Heart": 7,
+    "Thrill Hunger": 1,
+    "Short Fuse": 4,
+    "Track Record": 4
+   },
+   "villain_index": 39,
+   "dark_triad": {
+    "machiavellianism": "low",
+    "narcissism": "moderate",
+    "psychopathy": "low"
+   },
+   "verdict": "A cold miser, not a psychopath, and his capacity for transformation proves it.",
+   "takeaway": "Same character, same evidence, a 20-point disagreement."
+  },
+  "label": "For entertainment only, not a diagnosis."
+ },
+ "spin": {
+  "agent": "spin-doctor",
+  "character": "Ebenezer Scrooge",
+  "refused": false,
+  "result": {
+   "reframes": [
+    {
+     "theme": "Cold Heart",
+     "spin": "Relentless focus on cost control."
+    },
+    {
+     "theme": "Main Character Energy",
+     "spin": "Strong conviction in his business model."
+    },
+    {
+     "theme": "Thrill Hunger",
+     "spin": "Low-risk, steady-growth investment philosophy."
+    }
+   ],
+   "title": "Chief Financial Officer (Pre-Reform)",
+   "wink": "(Spin Doctor's opinions are satire. The Judge is not impressed.)"
+  },
+  "label": "For entertainment only, not a diagnosis."
+ },
+ "then_vs_now": {
+  "agent": "then-vs-now-analyst",
+  "character": "Ebenezer Scrooge",
+  "refused": false,
+  "result": {
+   "then": {
+    "scores": {
+     "Charm Offensive": 1,
+     "Main Character Energy": 7,
+     "Con Artistry": 4,
+     "Remorse Meter": 8,
+     "Cold Heart": 9,
+     "Thrill Hunger": 1,
+     "Short Fuse": 5,
+     "Track Record": 5
+    },
+    "index": 50
+   },
+   "now": {
+    "scores": {
+     "Charm Offensive": 6,
+     "Main Character Energy": 2,
+     "Con Artistry": 1,
+     "Remorse Meter": 1,
+     "Cold Heart": 1,
+     "Thrill Hunger": 3,
+     "Short Fuse": 2,
+     "Track Record": 5
+    },
+    "index": 26
+   },
+   "track_record_effect": "Track Record stays at 5, but everything else drops sharply.",
+   "verdict": "Changed, the classic redemption arc."
+  },
+  "label": "For entertainment only, not a diagnosis."
+ }
+}

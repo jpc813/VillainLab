@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Too neurotic to be a psychopath? A quiz from the Villain Lab</title>
+<meta name="description" content="A private, 12-question quiz for fun. Your answers never leave this page and aren't saved.">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="site-head">
+  <div class="wrap">
+    <a class="brand" href="index.html">The Villain Lab<small>fictional villains on trial</small></a>
+    <nav class="nav" aria-label="Main">
+      <a href="index.html">Villain Panel</a>
+      <a href="quiz.html" aria-current="page">Take the quiz</a>
+      <a href="about.html">About</a>
+      <a href="resources.html">Resources</a>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap">
+  <h1>Too neurotic to be a psychopath?</h1>
+  <p class="lede">Twelve everyday questions about you, and only you. When a radio staff took a real psychopathy test, every one of them scored zero. Let's see if you can join them.</p>
+  <p class="label-ent">For entertainment only, not a diagnosis. Your answers never leave this page and aren't saved. Refreshing the page clears everything.</p>
+
+  <p class="progress" id="progress" aria-live="polite"></p>
+  <form class="quiz" id="quiz-form">
+    <div class="quiz-actions">
+      <button class="btn" type="submit">See my result</button>
+    </div>
+  </form>
+
+  <section class="result" id="result" hidden aria-live="polite">
+    <h2 tabindex="-1"></h2>
+    <p class="r-body"></p>
+    <p class="r-score"></p>
+    <p class="label-ent">For entertainment only, not a diagnosis. Your answers never left this page.</p>
+    <button class="btn ghost" type="button" id="hide-result">Hide my result</button>
+  </section>
+</main>
+
+<footer class="site-foot">
+  <div class="wrap">
+    <p>Taking this in class over Zoom? Don't share your screen, and keep your score out of the chat.</p>
+    <p>Worried about your mental health? A doctor or counselor is the right person to talk to. A quiz isn't.</p>
+  </div>
+</footer>
+<script src="js/quiz.js"></script>
+</body>
+</html>

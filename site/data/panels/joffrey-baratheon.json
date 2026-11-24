@@ -1,0 +1,129 @@
+{
+ "character": "Joffrey Baratheon",
+ "version": "Game of Thrones (TV series)",
+ "pregenerated": true,
+ "spoilers": false,
+ "prosecution": {
+  "agent": "prosecution-rater",
+  "character": "Joffrey Baratheon",
+  "version": "Game of Thrones (TV series)",
+  "refused": false,
+  "result": {
+   "scores": {
+    "Charm Offensive": 3,
+    "Main Character Energy": 10,
+    "Con Artistry": 4,
+    "Remorse Meter": 10,
+    "Cold Heart": 10,
+    "Thrill Hunger": 9,
+    "Short Fuse": 10,
+    "Track Record": 10
+   },
+   "evidence": {
+    "Cold Heart": "Torments Sansa and orders executions for fun.",
+    "Short Fuse": "Throws tantrums and lashes out at the slightest challenge.",
+    "Thrill Hunger": "Seeks cruelty as entertainment."
+   },
+   "villain_index": 82,
+   "closing_argument": "Give a crossbow to a toddler with a crown and you get Joffrey."
+  },
+  "label": "For entertainment only, not a diagnosis."
+ },
+ "defense": {
+  "agent": "defense-rater",
+  "character": "Joffrey Baratheon",
+  "version": "Game of Thrones (TV series)",
+  "refused": false,
+  "result": {
+   "scores": {
+    "Charm Offensive": 2,
+    "Main Character Energy": 10,
+    "Con Artistry": 2,
+    "Remorse Meter": 7,
+    "Cold Heart": 7,
+    "Thrill Hunger": 6,
+    "Short Fuse": 9,
+    "Track Record": 8
+   },
+   "evidence": {
+    "Con Artistry": "Too impulsive to scheme; his mother does the planning.",
+    "Remorse Meter": "Barely more than a child, raised by cruel examples.",
+    "Thrill Hunger": "Bullying, not real risk: he runs from actual danger."
+   },
+   "villain_index": 64,
+   "closing_argument": "A spoiled, frightened boy with too much power. Cruel, yes, but cowardly too."
+  },
+  "label": "For entertainment only, not a diagnosis."
+ },
+ "judge": {
+  "agent": "judge",
+  "character": "Joffrey Baratheon",
+  "version": "Game of Thrones (TV series)",
+  "refused": false,
+  "result": {
+   "gaps": [
+    {
+     "theme": "Thrill Hunger",
+     "prosecution": 9,
+     "defense": 6,
+     "why": "Prosecution sees thrill-seeking; Defense sees cowardice. He chases cruelty, not risk."
+    },
+    {
+     "theme": "Remorse Meter",
+     "prosecution": 10,
+     "defense": 7,
+     "why": "Defense credits youth; the Judge notes no regret ever appears."
+    },
+    {
+     "theme": "Cold Heart",
+     "prosecution": 10,
+     "defense": 7,
+     "why": "Defense argues his cruelty is learned; the Judge says that explains it, but doesn't soften it."
+    }
+   ],
+   "judge_scores": {
+    "Charm Offensive": 2,
+    "Main Character Energy": 10,
+    "Con Artistry": 3,
+    "Remorse Meter": 9,
+    "Cold Heart": 9,
+    "Thrill Hunger": 7,
+    "Short Fuse": 10,
+    "Track Record": 9
+   },
+   "villain_index": 74,
+   "dark_triad": {
+    "machiavellianism": "low",
+    "narcissism": "high",
+    "psychopathy": "high"
+   },
+   "verdict": "An egoist with a cold heart and the shortest fuse in Westeros. Too impulsive to be a schemer: more bully than mastermind.",
+   "takeaway": "Same character, same evidence, an 18-point disagreement."
+  },
+  "label": "For entertainment only, not a diagnosis."
+ },
+ "spin": {
+  "agent": "spin-doctor",
+  "character": "Joffrey Baratheon",
+  "refused": false,
+  "result": {
+   "reframes": [
+    {
+     "theme": "Short Fuse",
+     "spin": "Rapid decision-maker; no meeting goes long when he's in charge."
+    },
+    {
+     "theme": "Main Character Energy",
+     "spin": "Natural-born executive presence and a strong sense of entitlement to the corner office."
+    },
+    {
+     "theme": "Cold Heart",
+     "spin": "Unsentimental about underperformers."
+    }
+   ],
+   "title": "Crown Prince of Disruption",
+   "wink": "(Spin Doctor's opinions are satire. The Judge is not impressed.)"
+  },
+  "label": "For entertainment only, not a diagnosis."
+ }
+}

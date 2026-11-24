@@ -1,0 +1,165 @@
+{
+ "character": "Zuko",
+ "version": "Avatar: The Last Airbender (animated series)",
+ "pregenerated": true,
+ "spoilers": true,
+ "prosecution": {
+  "agent": "prosecution-rater",
+  "character": "Zuko",
+  "version": "Avatar: The Last Airbender (animated series)",
+  "refused": false,
+  "result": {
+   "scores": {
+    "Charm Offensive": 3,
+    "Main Character Energy": 8,
+    "Con Artistry": 4,
+    "Remorse Meter": 4,
+    "Cold Heart": 5,
+    "Thrill Hunger": 6,
+    "Short Fuse": 9,
+    "Track Record": 6
+   },
+   "evidence": {
+    "Short Fuse": "Explosive temper, especially early on.",
+    "Main Character Energy": "Obsessed with regaining his honor and his throne.",
+    "Track Record": "Hunts the Avatar and attacks villages."
+   },
+   "villain_index": 56,
+   "closing_argument": "He burned a lot of things chasing his father's approval."
+  },
+  "label": "For entertainment only, not a diagnosis."
+ },
+ "defense": {
+  "agent": "defense-rater",
+  "character": "Zuko",
+  "version": "Avatar: The Last Airbender (animated series)",
+  "refused": false,
+  "result": {
+   "scores": {
+    "Charm Offensive": 2,
+    "Main Character Energy": 6,
+    "Con Artistry": 3,
+    "Remorse Meter": 2,
+    "Cold Heart": 2,
+    "Thrill Hunger": 4,
+    "Short Fuse": 7,
+    "Track Record": 4
+   },
+   "evidence": {
+    "Remorse Meter": "Shows deep regret and apologizes to those he hurt.",
+    "Cold Heart": "Cares for his uncle and protects the vulnerable.",
+    "Main Character Energy": "A banished teenager scarred by his own father."
+   },
+   "villain_index": 38,
+   "closing_argument": "A wounded kid who chose to become better."
+  },
+  "label": "For entertainment only, not a diagnosis."
+ },
+ "judge": {
+  "agent": "judge",
+  "character": "Zuko",
+  "version": "Avatar: The Last Airbender (animated series)",
+  "refused": false,
+  "result": {
+   "gaps": [
+    {
+     "theme": "Remorse Meter",
+     "prosecution": 4,
+     "defense": 2,
+     "why": "Defense scores the Zuko who apologizes; Prosecution the one who hunts. Then vs. Now splits it."
+    },
+    {
+     "theme": "Cold Heart",
+     "prosecution": 5,
+     "defense": 2,
+     "why": "Defense cites his compassion; the Judge sees warmth throughout, even when he's angry."
+    },
+    {
+     "theme": "Short Fuse",
+     "prosecution": 9,
+     "defense": 7,
+     "why": "Small gap: both agree he has a temper."
+    }
+   ],
+   "judge_scores": {
+    "Charm Offensive": 2,
+    "Main Character Energy": 7,
+    "Con Artistry": 3,
+    "Remorse Meter": 3,
+    "Cold Heart": 3,
+    "Thrill Hunger": 5,
+    "Short Fuse": 8,
+    "Track Record": 5
+   },
+   "villain_index": 45,
+   "dark_triad": {
+    "machiavellianism": "low",
+    "narcissism": "moderate",
+    "psychopathy": "low"
+   },
+   "verdict": "An angry, honor-obsessed teen, not a psychopath. His capacity for guilt is the giveaway.",
+   "takeaway": "Same character, same evidence, an 18-point disagreement."
+  },
+  "label": "For entertainment only, not a diagnosis."
+ },
+ "spin": {
+  "agent": "spin-doctor",
+  "character": "Zuko",
+  "refused": false,
+  "result": {
+   "reframes": [
+    {
+     "theme": "Short Fuse",
+     "spin": "Passionate leader who brings real fire to every project."
+    },
+    {
+     "theme": "Main Character Energy",
+     "spin": "Highly motivated by legacy and reputation."
+    },
+    {
+     "theme": "Thrill Hunger",
+     "spin": "Comfortable traveling for business on short notice."
+    }
+   ],
+   "title": "Regional Manager, Fire Nation (Redeemed)",
+   "wink": "(Spin Doctor's opinions are satire. The Judge is not impressed.)"
+  },
+  "label": "For entertainment only, not a diagnosis."
+ },
+ "then_vs_now": {
+  "agent": "then-vs-now-analyst",
+  "character": "Zuko",
+  "refused": false,
+  "result": {
+   "then": {
+    "scores": {
+     "Charm Offensive": 3,
+     "Main Character Energy": 9,
+     "Con Artistry": 5,
+     "Remorse Meter": 5,
+     "Cold Heart": 5,
+     "Thrill Hunger": 7,
+     "Short Fuse": 9,
+     "Track Record": 5
+    },
+    "index": 60
+   },
+   "now": {
+    "scores": {
+     "Charm Offensive": 2,
+     "Main Character Energy": 3,
+     "Con Artistry": 1,
+     "Remorse Meter": 1,
+     "Cold Heart": 1,
+     "Thrill Hunger": 4,
+     "Short Fuse": 4,
+     "Track Record": 5
+    },
+    "index": 26
+   },
+   "track_record_effect": "Track Record stays at 5: the early attacks still count, even after he changes.",
+   "verdict": "Changed. One of the clearest redemption arcs in the lab."
+  },
+  "label": "For entertainment only, not a diagnosis."
+ }
+}

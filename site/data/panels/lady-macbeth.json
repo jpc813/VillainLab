@@ -1,0 +1,165 @@
+{
+ "character": "Lady Macbeth",
+ "version": "Macbeth (Shakespeare)",
+ "pregenerated": true,
+ "spoilers": true,
+ "prosecution": {
+  "agent": "prosecution-rater",
+  "character": "Lady Macbeth",
+  "version": "Macbeth (Shakespeare)",
+  "refused": false,
+  "result": {
+   "scores": {
+    "Charm Offensive": 7,
+    "Main Character Energy": 8,
+    "Con Artistry": 8,
+    "Remorse Meter": 6,
+    "Cold Heart": 8,
+    "Thrill Hunger": 6,
+    "Short Fuse": 6,
+    "Track Record": 7
+   },
+   "evidence": {
+    "Con Artistry": "Plots the king's murder and pushes her husband to do it.",
+    "Cold Heart": "Asks to be stripped of tenderness to do the deed.",
+    "Charm Offensive": "Plays the gracious hostess to her victim."
+   },
+   "villain_index": 70,
+   "closing_argument": "She planned the murder and smeared the evidence herself."
+  },
+  "label": "For entertainment only, not a diagnosis."
+ },
+ "defense": {
+  "agent": "defense-rater",
+  "character": "Lady Macbeth",
+  "version": "Macbeth (Shakespeare)",
+  "refused": false,
+  "result": {
+   "scores": {
+    "Charm Offensive": 6,
+    "Main Character Energy": 7,
+    "Con Artistry": 6,
+    "Remorse Meter": 2,
+    "Cold Heart": 4,
+    "Thrill Hunger": 4,
+    "Short Fuse": 5,
+    "Track Record": 5
+   },
+   "evidence": {
+    "Remorse Meter": "Consumed by guilt; sleepwalks, trying to wash away imagined blood.",
+    "Cold Heart": "Couldn't kill the king herself because he resembled her father.",
+    "Track Record": "Her harm is concentrated in one act, not a long pattern."
+   },
+   "villain_index": 49,
+   "closing_argument": "Her guilt destroys her. That's the opposite of a psychopath."
+  },
+  "label": "For entertainment only, not a diagnosis."
+ },
+ "judge": {
+  "agent": "judge",
+  "character": "Lady Macbeth",
+  "version": "Macbeth (Shakespeare)",
+  "refused": false,
+  "result": {
+   "gaps": [
+    {
+     "theme": "Remorse Meter",
+     "prosecution": 6,
+     "defense": 2,
+     "why": "The biggest gap in the lab: her overwhelming guilt is strong evidence against the psychopath profile. The Judge sides with Defense."
+    },
+    {
+     "theme": "Cold Heart",
+     "prosecution": 8,
+     "defense": 4,
+     "why": "Defense points to her hesitation; Prosecution to her plotting."
+    },
+    {
+     "theme": "Track Record",
+     "prosecution": 7,
+     "defense": 5,
+     "why": "Defense counts one crime; Prosecution counts the cover-up too."
+    }
+   ],
+   "judge_scores": {
+    "Charm Offensive": 7,
+    "Main Character Energy": 8,
+    "Con Artistry": 7,
+    "Remorse Meter": 3,
+    "Cold Heart": 6,
+    "Thrill Hunger": 5,
+    "Short Fuse": 5,
+    "Track Record": 6
+   },
+   "villain_index": 59,
+   "dark_triad": {
+    "machiavellianism": "high",
+    "narcissism": "moderate",
+    "psychopathy": "low"
+   },
+   "verdict": "A schemer, but her collapse into guilt shows a conscience. Ambition, not psychopathy.",
+   "takeaway": "Same character, same evidence, a 21-point disagreement."
+  },
+  "label": "For entertainment only, not a diagnosis."
+ },
+ "spin": {
+  "agent": "spin-doctor",
+  "character": "Lady Macbeth",
+  "refused": false,
+  "result": {
+   "reframes": [
+    {
+     "theme": "Con Artistry",
+     "spin": "Bold executive sponsor of transformational leadership changes."
+    },
+    {
+     "theme": "Charm Offensive",
+     "spin": "Gracious, high-touch host for visiting VIPs."
+    },
+    {
+     "theme": "Main Character Energy",
+     "spin": "Strongly invested in her partner's career growth."
+    }
+   ],
+   "title": "Chief of Staff (Succession Planning)",
+   "wink": "(Spin Doctor's opinions are satire. The Judge is not impressed.)"
+  },
+  "label": "For entertainment only, not a diagnosis."
+ },
+ "then_vs_now": {
+  "agent": "then-vs-now-analyst",
+  "character": "Lady Macbeth",
+  "refused": false,
+  "result": {
+   "then": {
+    "scores": {
+     "Charm Offensive": 7,
+     "Main Character Energy": 8,
+     "Con Artistry": 8,
+     "Remorse Meter": 9,
+     "Cold Heart": 9,
+     "Thrill Hunger": 6,
+     "Short Fuse": 6,
+     "Track Record": 3
+    },
+    "index": 70
+   },
+   "now": {
+    "scores": {
+     "Charm Offensive": 3,
+     "Main Character Energy": 4,
+     "Con Artistry": 2,
+     "Remorse Meter": 1,
+     "Cold Heart": 2,
+     "Thrill Hunger": 2,
+     "Short Fuse": 6,
+     "Track Record": 7
+    },
+    "index": 34
+   },
+   "track_record_effect": "Track Record rises to 7 because the murder can't be undone, even as every other theme collapses.",
+   "verdict": "A fall into guilt rather than redemption, but the guilt itself argues against psychopathy."
+  },
+  "label": "For entertainment only, not a diagnosis."
+ }
+}

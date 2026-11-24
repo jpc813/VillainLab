@@ -1,0 +1,129 @@
+{
+ "character": "The Joker",
+ "version": "The Dark Knight (2008 film)",
+ "pregenerated": true,
+ "spoilers": false,
+ "prosecution": {
+  "agent": "prosecution-rater",
+  "character": "The Joker",
+  "version": "The Dark Knight (2008 film)",
+  "refused": false,
+  "result": {
+   "scores": {
+    "Charm Offensive": 8,
+    "Main Character Energy": 9,
+    "Con Artistry": 9,
+    "Remorse Meter": 10,
+    "Cold Heart": 10,
+    "Thrill Hunger": 10,
+    "Short Fuse": 7,
+    "Track Record": 10
+   },
+   "evidence": {
+    "Thrill Hunger": "Lives for chaos and escalation.",
+    "Con Artistry": "Plans elaborate traps and lies about his own past.",
+    "Remorse Meter": "Laughs at destruction."
+   },
+   "villain_index": 91,
+   "closing_argument": "He doesn't want money. He wants to watch it burn."
+  },
+  "label": "For entertainment only, not a diagnosis."
+ },
+ "defense": {
+  "agent": "defense-rater",
+  "character": "The Joker",
+  "version": "The Dark Knight (2008 film)",
+  "refused": false,
+  "result": {
+   "scores": {
+    "Charm Offensive": 7,
+    "Main Character Energy": 8,
+    "Con Artistry": 8,
+    "Remorse Meter": 8,
+    "Cold Heart": 8,
+    "Thrill Hunger": 9,
+    "Short Fuse": 5,
+    "Track Record": 9
+   },
+   "evidence": {
+    "Short Fuse": "His plans are intricate, not impulsive.",
+    "Main Character Energy": "Claims to be making a point about society.",
+    "Remorse Meter": "His ever-changing origin stories hint at trauma."
+   },
+   "villain_index": 78,
+   "closing_argument": "An agent of chaos with a philosophy, however twisted."
+  },
+  "label": "For entertainment only, not a diagnosis."
+ },
+ "judge": {
+  "agent": "judge",
+  "character": "The Joker",
+  "version": "The Dark Knight (2008 film)",
+  "refused": false,
+  "result": {
+   "gaps": [
+    {
+     "theme": "Short Fuse",
+     "prosecution": 7,
+     "defense": 5,
+     "why": "Defense says every move is planned; Prosecution cites sudden violence. The Judge leans Defense."
+    },
+    {
+     "theme": "Remorse Meter",
+     "prosecution": 10,
+     "defense": 8,
+     "why": "Defense's trauma theory is speculation; the film shows no regret."
+    },
+    {
+     "theme": "Main Character Energy",
+     "prosecution": 9,
+     "defense": 8,
+     "why": "Small gap: both agree his ego is enormous."
+    }
+   ],
+   "judge_scores": {
+    "Charm Offensive": 8,
+    "Main Character Energy": 9,
+    "Con Artistry": 9,
+    "Remorse Meter": 10,
+    "Cold Heart": 10,
+    "Thrill Hunger": 10,
+    "Short Fuse": 5,
+    "Track Record": 10
+   },
+   "villain_index": 89,
+   "dark_triad": {
+    "machiavellianism": "high",
+    "narcissism": "high",
+    "psychopathy": "high"
+   },
+   "verdict": "Another full house, and the Thrill Hunger champion of the lab.",
+   "takeaway": "Same character, same evidence, a 13-point disagreement."
+  },
+  "label": "For entertainment only, not a diagnosis."
+ },
+ "spin": {
+  "agent": "spin-doctor",
+  "character": "The Joker",
+  "refused": false,
+  "result": {
+   "reframes": [
+    {
+     "theme": "Thrill Hunger",
+     "spin": "Thrives in ambiguity; a natural change agent."
+    },
+    {
+     "theme": "Con Artistry",
+     "spin": "Creative, unconventional problem solver."
+    },
+    {
+     "theme": "Charm Offensive",
+     "spin": "Highly memorable presenter."
+    }
+   ],
+   "title": "Chief Chaos Officer",
+   "wink": "(Spin Doctor's opinions are satire. The Judge is not impressed.)"
+  },
+  "label": "For entertainment only, not a diagnosis."
+ }
+}
