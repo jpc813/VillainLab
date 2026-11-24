@@ -25,6 +25,8 @@ Context for the agent team that builds and runs **The Villain Lab**: an app wher
 | [08-zoom-demo-guide.md](08-zoom-demo-guide.md) | Running the class demo over Zoom |
 | [09-about-page-story.md](09-about-page-story.md) | The About page text and the (unpublished) name key |
 | [sources.md](sources.md) | Every link, for the Resources page |
+| [agent-brains.md](agent-brains.md) | Each agent's name, model, personality and why |
+| [how-to-talk-to-your-experts.md](how-to-talk-to-your-experts.md) | Example prompts for one agent or the whole team |
 | [expert-roster.md](expert-roster.md) | The 15-agent team, their personalities and models, the 18 shared skills, and the trait themes |
 
 ## Ground rules for every agent
