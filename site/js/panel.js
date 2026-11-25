@@ -86,6 +86,7 @@ async function run(name) {
     if (starter) {
       setStatus("Opening the case file…");
       const r = await fetch(`data/panels/${starter.slug}.json`);
+      if (!r.ok) throw new Error("Couldn't open that case file. Refresh the page and try again.");
       current = await r.json();
       setStatus("");
       render();
@@ -108,12 +109,13 @@ async function run(name) {
 }
 
 const article = (n) => (n === 8 || n === 11 || n === 18 || (n >= 80 && n < 90) ? "An" : "A");
+const num = (v) => (Number.isFinite(Number(v)) ? Math.round(Number(v)) : 0);
 const idx = (scores) => Math.round(THEMES.reduce((a, t) => a + (Number(scores?.[t]) || 0), 0) / 80 * 100);
 
 function render() {
   const c = current;
   const P = c.prosecution.result, D = c.defense.result, J = c.judge.result;
-  const pi = P.villain_index ?? idx(P.scores), di = D.villain_index ?? idx(D.scores), ji = J.villain_index ?? idx(J.judge_scores);
+  const pi = num(P.villain_index ?? idx(P.scores)), di = num(D.villain_index ?? idx(D.scores)), ji = num(J.villain_index ?? idx(J.judge_scores));
   const gap = Math.abs(pi - di);
   let biggest = THEMES[0], bg = -1;
   for (const t of THEMES) { const g = Math.abs((P.scores[t] || 0) - (D.scores[t] || 0)); if (g > bg) { bg = g; biggest = t; } }
@@ -131,7 +133,7 @@ function render() {
     <div class="chart" role="group" aria-label="Trait theme scores, out of 10">
       <p class="legend"><span><i class="lp"></i>Prosecution</span><span><i class="ld"></i>Defense</span><span><i class="lj"></i>Judge</span><span>Each theme is scored out of 10.</span></p>
       ${THEMES.map((t) => {
-        const p = P.scores[t] ?? 0, d = D.scores[t] ?? 0, j = J.judge_scores?.[t] ?? 0;
+        const p = num(P.scores[t]), d = num(D.scores[t]), j = num(J.judge_scores?.[t]);
         return `<div class="theme${t === biggest ? " big-gap" : ""}">
           <div class="theme-name">${esc(t)}</div>
           <div class="bars" aria-hidden="true">
@@ -198,19 +200,21 @@ async function showSpin() {
   try {
     if (!current.spin) {
       out.innerHTML = `<p>Chase Sterling is polishing his talking points…</p>`;
-      current.spin = await callAgent("spin-doctor", current.character, { judge: current.judge.result });
+      const reply = await callAgent("spin-doctor", current.character, { judge: current.judge.result });
+      if (reply.refused || !reply.result) { out.innerHTML = `<p class="status error">${esc(reply.message || "Chase declined this one. Try another character.")}</p>`; return; }
+      current.spin = reply;
     }
     const S = current.spin.result;
     out.innerHTML = `<div class="memo"><h3>Chase Sterling, Spin Doctor: "${esc(S.title)}"</h3>
       <ul>${(S.reframes || []).map((r) => `<li><b>${esc(r.theme)}</b>: ${esc(r.spin)}</li>`).join("")}</ul>
-      <p>${esc(S.wink)}</p></div>`;
+      <p>${esc(S.wink)}</p><p class="label-ent">Satire. For entertainment only, not a diagnosis.</p></div>`;
   } catch (e) { out.innerHTML = `<p class="status error">${esc(e.message)}</p>`; }
 }
 
 async function showTvn() {
   const out = $("#extra-out"); out.hidden = false;
   if (current.pregenerated && !current.then_vs_now) {
-    out.innerHTML = `<div class="memo"><p>Hope Rivera says ${esc(current.character)} doesn't have a turning point to compare. Try Zuko, Darth Vader, Scrooge or Walter White.</p></div>`;
+    out.innerHTML = `<div class="memo"><p>Hope Rivera says ${esc(current.character)} doesn't have a turning point to compare. Try Zuko, Darth Vader, Walter White, Jaime Lannister, Severus Snape or Lady Macbeth.</p></div>`;
     return;
   }
   if (current.spoilers && !out.dataset.ok) {
@@ -222,12 +226,14 @@ async function showTvn() {
   try {
     if (!current.then_vs_now) {
       out.innerHTML = `<p>Hope Rivera is comparing the beginning and the end…</p>`;
-      current.then_vs_now = await callWithFallback("then-vs-now-analyst", current.character, { judge: current.judge.result }, "Switching Hope to fast mode…");
+      const reply = await callWithFallback("then-vs-now-analyst", current.character, { judge: current.judge.result }, "Switching Hope to fast mode…");
+      if (reply.refused || !reply.result) { out.innerHTML = `<p class="status error">${esc(reply.message || "Hope declined this one. Try another character.")}</p>`; return; }
+      current.then_vs_now = reply;
     }
     const T = current.then_vs_now.result;
     out.innerHTML = `<div class="memo"><h3>Hope Rivera, then vs. now</h3>
       <div class="tvn"><div><b>${esc(T.then?.index)}</b>Villain Index at the start</div><div><b>${esc(T.now?.index)}</b>Villain Index at the end</div></div>
-      <p>${esc(T.track_record_effect)}</p><p><b>${esc(T.verdict)}</b></p></div>`;
+      <p>${esc(T.track_record_effect)}</p><p><b>${esc(T.verdict)}</b></p><p class="label-ent">For entertainment only, not a diagnosis.</p></div>`;
   } catch (e) { out.innerHTML = `<p class="status error">${esc(e.message)}</p>`; }
 }
 

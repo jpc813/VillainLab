@@ -84,7 +84,9 @@ p { max-width: 66ch; }
 .docket button:hover { border-color: var(--ink); background: var(--card); }
 
 .status { min-height: 28px; margin: 18px 0 0; font-size: 16px; }
-.status.error { color: var(--margin); font-weight: 600; }
+.status.error { color: #a8322b; font-weight: 600; }
+@media (prefers-color-scheme: dark) { .status.error { color: var(--margin); } }
+.case-title, .status, .wrap { overflow-wrap: anywhere; }
 
 /* verdict */
 .case { margin-top: 18px; }
