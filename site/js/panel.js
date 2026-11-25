@@ -75,6 +75,8 @@ async function callWithFallback(agent, character, context, slowMsg) {
 async function run(name) {
   name = name.trim();
   if (!name) { setStatus("Type a fictional character's name, or pick one from the docket.", true); input.focus(); return; }
+  // Clear the previous verdict so a refusal or error never sits above another character's scores.
+  caseEl.hidden = true;
   if (name.length > 60) { setStatus("That name is too long. Use 60 characters or fewer.", true); return; }
   if (looksReal(name)) {
     setStatus("The Villain Lab only puts fictional characters on trial, never real people. Try Tom Ripley or Cersei Lannister.", true);
