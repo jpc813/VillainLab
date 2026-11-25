@@ -32,10 +32,15 @@ async function init() {
     const li = document.createElement("li");
     const b = document.createElement("button");
     b.type = "button"; b.textContent = c.name;
-    b.addEventListener("click", () => { input.value = c.name; run(c.name); });
+    b.addEventListener("click", () => { input.value = c.name; input.dataset.fromArchive = "1"; run(c.name); });
     li.append(b); list.append(li);
     const o = document.createElement("option"); o.value = c.name; dl.append(o);
   }
+  // A name filled in by an archive button gets replaced, not appended to, when the user types a new one.
+  const selectArchiveName = () => { if (input.dataset.fromArchive) input.select(); };
+  input.addEventListener("focus", selectArchiveName);
+  input.addEventListener("pointerup", selectArchiveName);
+  input.addEventListener("input", () => { delete input.dataset.fromArchive; });
 }
 
 async function callAgent(agent, character, context = {}, fast = false) {
